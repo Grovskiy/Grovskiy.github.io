@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Garant</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="format-detection" content="address=no"/>
+
+	<!-- Template Basic Images Start -->
+<!-- 	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+	<!-- Template Basic Images End -->
+	
+	<link rel="stylesheet" href="css/fonts.min.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<!-- <meta name="theme-color" content="#fff"> -->
+	<!-- Windows Phone -->
+	<!-- <meta name="msapplication-navbutton-color" content="#fff"> -->
+	<!-- iOS Safari -->
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="#fff"> -->
+	<!-- Custom Browsers Color End -->
+
+</head>
+
+<body>
+		<a href="../../index.html" class="btn_backb" 
+		style="position: fixed; 
+		padding: 10px 20px; 
+		background-color: #5e68af; 
+		color: #fff; 
+		text-decoration: none;
+		font-weight: normal;
+		z-index: 1000;">Назад</a>
+	<div class="wrapper">
+		<main>
+			<header>
+				<div class="container_nop">
+					<a href="#" class="banner"><img src="img/banner.jpg" alt="#"></a>
+				</div>
+
+				<div class="top_mnu_wrap">
+					<div class="container_nop">
+						<div class="top_mnu">
+							<a href="index.html" class="logo">						
+								<svg xmlns="http://www.w3.org/2000/svg" width="361" height="33" viewBox="0 0 361 33"><g style="line-height:26.580019px" font-weight="400" font-size="42.528" font-family="sans-serif" letter-spacing="0" word-spacing="0" stroke-width="1.063"><path d="M31.242 9.156H14.076q-1.75 0-2.702.178-.93.155-1.64 1.35.222 1.507 1.197 1.706.974.177 3.012.177h8.395q5.05.288 7.066 2.924 2.015 2.636 1.55 7.354-.753 4.718-3.322 6.977-2.57 2.237-8.484 2.326H.41l.797-7.952h17.809q2.303 0 3.5-.155 1.217-.177 1.66-1.794-.155-1.285-1.24-1.528-1.063-.266-3.588-.266H11.24q-5.36 0-7.597-2.614-2.215-2.614-1.75-7.243.864-4.85 3.5-7.044 2.635-2.192 8.35-2.458H32.04zM30.246 32.06l9.28-.023.975-9.657h12.78q9.636-.576 10.677-10.699Q65.02 1.56 54.854 1.05H33.347zM41.985 8.801h11.496q2.79.42 2.392 2.902-.377 2.458-2.924 2.436l-11.496.044zM87.149 32.502H72.44q-9.812.045-8.173-15.792Q65.796.695 76.207.607l12.071.022q10.876-.2 9.148 15.46-.73 16.214-10.277 16.413zM74.058 11.24q-.797 1.196-1.262 5.426-.466 4.209-.045 5.073.665 2.126 2.725 2.525l8.682-.023q2.215-.243 3.101-2.015 1.086-1.24 1.507-6.047.42-4.829-.665-6.158-1.041-1.395-3.234-1.595h-6.69q-2.9.222-4.119 2.814zM96.828 32.06l9.303-.023.953-9.657h8.217l4.209 9.768h10.344l-4.342-10.211q5.05-3.81 5.183-10.344.488-8.927-9.258-10.543H99.95zM108.59 8.801h11.496q2.768.42 2.37 2.902-.377 2.458-2.99 2.503l-11.408-.023zM132.844 1.027l-.886 8.727 2.547-.044-1.107 10.765q-1.219 11.12 8.904 11.629h21.352l.82-8.727-18.85-.023q-2.88-.287-2.857-3.078l1.085-10.5 15.882.023.864-8.772z" fill="#ffc100"/><path d="M195.639 32.06h-21.862q-9.436-.554-7.974-15.528Q167.265 1.56 177.432 1.05l21.33.022-.797 7.553h-18.806q-2.104.022-3.079 1.484-2.259 5.759-1.794 11.518.244 1.838 2.215 2.348l11.784.022.93-9.06 8.13.023zM197.1 31.97l2.105-21.108q1.462-9.525 11.496-9.945L221.2.939q9.126.62 8.572 9.857l-2.127 21.22h-8.24l.953-9.437-13.777-.066-.93 9.458zm13.933-23.722q-3.322.089-3.278 3.278l-.355 3.3h13.756l.287-2.59q.665-3.589-2.082-4.01zM228.842 32.06l9.303-.023.952-9.657h8.218l4.208 9.768h10.344l-4.341-10.211q5.05-3.81 5.183-10.344.487-8.927-9.259-10.543h-21.485zm11.761-23.258H252.1q2.769.42 2.37 2.902-.377 2.458-2.99 2.503l-11.407-.023zM262.399 31.97l2.104-21.108q1.462-9.525 11.496-9.945l10.499.022q9.126.62 8.572 9.857l-2.127 21.22h-8.24l.953-9.437-13.777-.066-.93 9.458zM276.33 8.249q-3.323.089-3.278 3.278l-.355 3.3h13.755l.288-2.59q.665-3.589-2.082-4.01zM294.472 32.192l3.123-31.165h21.064q9.126-.199 8.617 9.901l-2.127 21.242h-8.262l2.083-19.47q.553-3.012-2.238-2.813H305.26l-2.215 22.305zM328.915 1.027l-.886 8.727 2.547-.044-1.107 10.765q-1.219 11.12 8.904 11.629h21.352l.82-8.727-18.85-.023q-2.88-.287-2.857-3.078l1.085-10.5 15.882.023.864-8.772z" fill="#fff"/></g></svg>
+							</a>
+							<button id="my-icon" class="hamburger hamburger--emphatic" type="button">
+								<span class="hamburger-box">
+									<span class="hamburger-inner"></span>
+								</span>
+							</button>
+							<ul>
+								<li><a href="#">История прогнозов</a></li>
+								<li><a href="#">Где сделать ставку?</a></li>
+								<li><a href="#">новости</a></li>
+								<li>
+									<a href="#">FAQ</a>
+									<div class="triangle"></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</header>
+
+			<div class="container_nop plazha">
+				<div class="container">
+					<div class="big_slide">
+						<div class="item">
+							<div class="img_wrap"><img src="img/slide.jpg" alt="#"></div>
+							<div class="plazhka">
+								<div>
+									<h2>Главные спортивные события 2017 года</h2>
+									<p>Самые рейтинговые спортивные соревнования — финальные турниры чемпионатов мира и Европы по футболу и Олимпийские игры — традиционно проводятся по четным годам...</p>
+								</div>
+								<a href="#" class="btn_1">событие</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img_wrap"><img src="img/slide.jpg" alt="#"></div>
+							<div class="plazhka">
+								<div>
+									<h2>Главные спортивные события 2017 года</h2>
+									<p>Самые рейтинговые спортивные соревнования — финальные турниры чемпионатов мира и Европы по футболу и Олимпийские игры — традиционно проводятся по четным годам...</p>
+								</div>
+								<a href="#" class="btn_1">событие</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img_wrap"><img src="img/slide.jpg" alt="#"></div>
+							<div class="plazhka">
+								<div>
+									<h2>Главные спортивные события 2017 года</h2>
+									<p>Самые рейтинговые спортивные соревнования — финальные турниры чемпионатов мира и Европы по футболу и Олимпийские игры — традиционно проводятся по четным годам...</p>
+								</div>
+								<a href="#" class="btn_1">событие</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="news_item">
+						<div class="item">
+							<div class="img_wrap"><img src="img/new.jpg" alt="#"></div>
+							<div>
+								<h3>Главные спортивные события 2017 года</h3>
+								<p>Самые рейтинговые спортивные соревнования — финальные турниры чемпионатов мира и Европы по футболу и Олимпийские игры — традиционно проводятся по четным годам...</p>
+								<a href="#">Подробнее</a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img_wrap"><img src="img/new.jpg" alt="#"></div>
+							<div>
+								<h3>Главные спортивные события 2017 года</h3>
+								<p>Самые рейтинговые спортивные соревнования — финальные турниры чемпионатов мира и Европы по футболу и Олимпийские игры — традиционно проводятся по четным годам...</p>
+								<a href="#">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<h2 class="head">Событие на завтра</h2>
+					<div class="stavki_zavtr">
+						<div class="left_block">
+							<div class="img_wrap">
+								<img src="img/stavki_nazavtra_bg.jpg" alt="#">
+							</div>
+							<div class="plazhka">
+								<span>Название команды</span>
+								<span>-</span>
+								<span>Название команды.</span>
+								<span>Событие на матч 25.01.2017</span>
+							</div>
+							<div class="logo_team">
+								<div>
+									<img src="img/logo_team.png" alt="#">
+								</div>
+								<div>
+									<img src="img/vs.png" alt="#">
+								</div>
+								<div>
+									<img src="img/logo_team2.png" alt="#">
+								</div>
+							</div>
+						</div>
+
+						<div class="right_block">
+							
+
+							<div class="top">
+								<div class="range_slider">
+									<div class="postavil_wrap">
+										<strong>поставил</strong>
+										<div>
+											<input id="sad" type="text" class="range_value vuvod"/>
+											<strong>$</strong>
+										</div>
+									</div>
+									<div>
+										<input class="polzunok" type="range" step="10" value="250" min="100" max="1000">
+									</div>
+								</div>
+							</div>
+							<div class="bottom">
+								<span class="skrutui_koff" style="display: none">1.95</span>
+								<div class="range_vuigral">
+									<div class="postavil_wrap">
+										<strong>Выиграл</strong>
+										<div>
+											<input type="text" class="vuigral" value="1000"/>
+											<strong>$</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+
+				<div class="container stavku_table">
+					<table >
+						<thead>
+							<tr>
+								<th>Контора</th>
+								<th>коэфф.</th>
+								<th>Результат</th>
+								<th>Перейти</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<div class="img_wrap"><img src="img/kontora.jpg" alt="#"></div>
+								</td>
+								<td>
+									<span class="koff">1.95</span>
+								</td>
+								<td>
+									<div class="stavka_win">
+										<div>
+											<strong>Поставил:</strong><span class="stavka">100</span><span>$</span>
+										</div>
+										<div>
+											<strong>Выиграл:</strong><span class="win">0</span><span>$</span>
+										</div>
+									</div>
+								</td>
+								<td><a href="#" class="btn_stavka">ставка</a></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="img_wrap"><img src="img/kontora.jpg" alt="#"></div>
+								</td>
+								<td>
+									<span class="koff">1.85</span>
+								</td>
+								<td>
+									<div class="stavka_win">
+										<div>
+											<strong>Поставил:</strong><span class="stavka">100</span><span>$</span>
+										</div>
+										<div>
+											<strong>Выиграл:</strong><span class="win">0</span><span>$</span>
+										</div>
+									</div>
+								</td>
+								<td><a href="#" class="btn_stavka">ставка</a></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="img_wrap"><img src="img/kontora.jpg" alt="#"></div>
+								</td>
+								<td>
+									<span class="koff">1.75</span>
+								</td>
+								<td>
+									<div class="stavka_win">
+										<div>
+											<strong>Поставил:</strong><span class="stavka">100</span><span>$</span>
+										</div>
+										<div>
+											<strong>Выиграл:</strong><span class="win">0</span><span>$</span>
+										</div>
+									</div>
+								</td>
+								<td><a href="#" class="btn_stavka">ставка</a></td>
+							</tr>
+							<tr>
+								<td>
+									<div class="img_wrap"><img src="img/kontora.jpg" alt="#"></div>
+								</td>
+								<td>
+									<span class="koff">1.65</span>
+								</td>
+								<td>
+									<div class="stavka_win">
+										<div>
+											<strong>Поставил:</strong><span class="stavka">100</span><span>$</span>
+										</div>
+										<div>
+											<strong>Выиграл:</strong><span class="win">0</span><span>$</span>
+										</div>
+									</div>
+								</td>
+								<td><a href="#" class="btn_stavka">ставка</a></td>
+							</tr>
+							
+							
+						</tbody>
+					</table>
+				</div>
+
+				<div class="container">
+					<h2 class="head">прошлые события</h2>
+
+					<div class="proshlue_sobutie">
+						<div class="item">
+							<div class="left_block">
+								<div class="img_wrap">
+									<img src="img/sobutie.jpg" alt="#">
+								</div>
+								<div class="plazhka">
+									<span>Название команды</span>
+									<span>-</span>
+									<span>Название команды.</span>
+									<span>Событие на матч 25.01.2017</span>
+								</div>
+								<div class="logo_team">
+									<div>
+										<img src="img/loteam1.png" alt="#">
+									</div>
+									<div>
+										<img src="img/vs_min.png" alt="#">
+									</div>
+									<div>
+										<img src="img/loteam2.png" alt="#">
+									</div>
+								</div>
+							</div>
+							<div class="right_block">
+								<strong>проход</strong>
+								<div class="vubor">
+									<a href="#" class="yes"></a>
+									<div class="line"></div>
+									<a href="#" class="no"></a>
+								</div>
+								<span>Ставка прошла</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="left_block">
+								<div class="img_wrap">
+									<img src="img/sobutie.jpg" alt="#">
+								</div>
+								<div class="plazhka">
+									<span>Название команды</span>
+									<span>-</span>
+									<span>Название команды.</span>
+									<span>Событие на матч 25.01.2017</span>
+								</div>
+								<div class="logo_team">
+									<div>
+										<img src="img/loteam1.png" alt="#">
+									</div>
+									<div>
+										<img src="img/vs_min.png" alt="#">
+									</div>
+									<div>
+										<img src="img/loteam2.png" alt="#">
+									</div>
+								</div>
+							</div>
+							<div class="right_block">
+								<strong>проход</strong>
+								<div class="vubor">
+									<a href="#" class="yes"></a>
+									<div class="line"></div>
+									<a href="#" class="no"></a>
+								</div>
+								<span>Ставка прошла</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="left_block">
+								<div class="img_wrap">
+									<img src="img/sobutie.jpg" alt="#">
+								</div>
+								<div class="plazhka">
+									<span>Название команды</span>
+									<span>-</span>
+									<span>Название команды.</span>
+									<span>Событие на матч 25.01.2017</span>
+								</div>
+								<div class="logo_team">
+									<div>
+										<img src="img/loteam1.png" alt="#">
+									</div>
+									<div>
+										<img src="img/vs_min.png" alt="#">
+									</div>
+									<div>
+										<img src="img/loteam2.png" alt="#">
+									</div>
+								</div>
+							</div>
+							<div class="right_block">
+								<strong>проход</strong>
+								<div class="vubor">
+									<a href="#" class="yes"></a>
+									<div class="line"></div>
+									<a href="#" class="no"></a>
+								</div>
+								<span>Ставка прошла</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="left_block">
+								<div class="img_wrap">
+									<img src="img/sobutie.jpg" alt="#">
+								</div>
+								<div class="plazhka">
+									<span>Название команды</span>
+									<span>-</span>
+									<span>Название команды.</span>
+									<span>Событие на матч 25.01.2017</span>
+								</div>
+								<div class="logo_team">
+									<div>
+										<img src="img/loteam1.png" alt="#">
+									</div>
+									<div>
+										<img src="img/vs_min.png" alt="#">
+									</div>
+									<div>
+										<img src="img/loteam2.png" alt="#">
+									</div>
+								</div>
+							</div>
+							<div class="right_block">
+								<strong>проход</strong>
+								<div class="vubor">
+									<a href="#" class="yes"></a>
+									<div class="line"></div>
+									<a href="#" class="no"></a>
+								</div>
+								<span>Ставка прошла</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="container">	
+					<h2 class="head">наши победители</h2>
+					<div class="nashu_pobediteli">
+						<div class="img_wrap">
+							<img src="img/1.jpg" alt="#">
+						</div>
+						<div class="img_wrap">
+							<img src="img/1.jpg" alt="#">
+						</div>
+						<div class="img_wrap">
+							<img src="img/1.jpg" alt="#">
+						</div>
+						<div class="img_wrap">
+							<img src="img/1.jpg" alt="#">
+						</div>
+						<div class="img_wrap">
+							<img src="img/1.jpg" alt="#">
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<h2 class="head">Комментарии</h2>
+					<div class="kommentarie">
+						<div class="item">
+							<div class="img_wrap"><img src="img/avatar.jpg" alt="#"></div>
+							<div>
+								<h3>Иван иванов</h3>
+								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img_wrap"><img src="img/avatar.jpg" alt="#"></div>
+							<div>
+								<h3>Иван иванов</h3>
+								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img_wrap"><img src="img/avatar.jpg" alt="#"></div>
+							<div>
+								<h3>Иван иванов</h3>
+								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="img_wrap"><img src="img/avatar.jpg" alt="#"></div>
+							<div>
+								<h3>Иван иванов</h3>
+								<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+							</div>
+						</div>
+					</div>
+					<div class="line_komment"></div>
+				</div>
+
+				<div class="container feedback_wrap">
+					<h2 class="head_feedback">Оставьте свой комментарий</h2>
+					<div class="feedback">
+						<form action="javascript:void(0)">
+							<input type="text" placeholder="Введите Ваше Имя">
+							<textarea placeholder="Введите Ваш Комментарий"></textarea>
+							<input type="submit" value="отправить">
+						</form>
+						<div id="thanks">
+							<p>Спасибо, ваш комментарий получен и появится на сайте после проверки модератором!</p>
+							<!-- <strong>dsada</strong> -->
+						</div>
+					</div>
+				</div>			
+
+			</div>
+
+
+		</main>
+		<footer>
+			<div class="container_nop plazha_foot">
+
+
+				<div class=container>
+					<div class="top_mnu">
+						<a href="index.html" class="logo">						
+							<svg xmlns="http://www.w3.org/2000/svg" width="361" height="33" viewBox="0 0 361 33"><g style="line-height:26.580019px" font-weight="400" font-size="42.528" font-family="sans-serif" letter-spacing="0" word-spacing="0" stroke-width="1.063"><path d="M31.242 9.156H14.076q-1.75 0-2.702.178-.93.155-1.64 1.35.222 1.507 1.197 1.706.974.177 3.012.177h8.395q5.05.288 7.066 2.924 2.015 2.636 1.55 7.354-.753 4.718-3.322 6.977-2.57 2.237-8.484 2.326H.41l.797-7.952h17.809q2.303 0 3.5-.155 1.217-.177 1.66-1.794-.155-1.285-1.24-1.528-1.063-.266-3.588-.266H11.24q-5.36 0-7.597-2.614-2.215-2.614-1.75-7.243.864-4.85 3.5-7.044 2.635-2.192 8.35-2.458H32.04zM30.246 32.06l9.28-.023.975-9.657h12.78q9.636-.576 10.677-10.699Q65.02 1.56 54.854 1.05H33.347zM41.985 8.801h11.496q2.79.42 2.392 2.902-.377 2.458-2.924 2.436l-11.496.044zM87.149 32.502H72.44q-9.812.045-8.173-15.792Q65.796.695 76.207.607l12.071.022q10.876-.2 9.148 15.46-.73 16.214-10.277 16.413zM74.058 11.24q-.797 1.196-1.262 5.426-.466 4.209-.045 5.073.665 2.126 2.725 2.525l8.682-.023q2.215-.243 3.101-2.015 1.086-1.24 1.507-6.047.42-4.829-.665-6.158-1.041-1.395-3.234-1.595h-6.69q-2.9.222-4.119 2.814zM96.828 32.06l9.303-.023.953-9.657h8.217l4.209 9.768h10.344l-4.342-10.211q5.05-3.81 5.183-10.344.488-8.927-9.258-10.543H99.95zM108.59 8.801h11.496q2.768.42 2.37 2.902-.377 2.458-2.99 2.503l-11.408-.023zM132.844 1.027l-.886 8.727 2.547-.044-1.107 10.765q-1.219 11.12 8.904 11.629h21.352l.82-8.727-18.85-.023q-2.88-.287-2.857-3.078l1.085-10.5 15.882.023.864-8.772z" fill="#ffc100"/><path d="M195.639 32.06h-21.862q-9.436-.554-7.974-15.528Q167.265 1.56 177.432 1.05l21.33.022-.797 7.553h-18.806q-2.104.022-3.079 1.484-2.259 5.759-1.794 11.518.244 1.838 2.215 2.348l11.784.022.93-9.06 8.13.023zM197.1 31.97l2.105-21.108q1.462-9.525 11.496-9.945L221.2.939q9.126.62 8.572 9.857l-2.127 21.22h-8.24l.953-9.437-13.777-.066-.93 9.458zm13.933-23.722q-3.322.089-3.278 3.278l-.355 3.3h13.756l.287-2.59q.665-3.589-2.082-4.01zM228.842 32.06l9.303-.023.952-9.657h8.218l4.208 9.768h10.344l-4.341-10.211q5.05-3.81 5.183-10.344.487-8.927-9.259-10.543h-21.485zm11.761-23.258H252.1q2.769.42 2.37 2.902-.377 2.458-2.99 2.503l-11.407-.023zM262.399 31.97l2.104-21.108q1.462-9.525 11.496-9.945l10.499.022q9.126.62 8.572 9.857l-2.127 21.22h-8.24l.953-9.437-13.777-.066-.93 9.458zM276.33 8.249q-3.323.089-3.278 3.278l-.355 3.3h13.755l.288-2.59q.665-3.589-2.082-4.01zM294.472 32.192l3.123-31.165h21.064q9.126-.199 8.617 9.901l-2.127 21.242h-8.262l2.083-19.47q.553-3.012-2.238-2.813H305.26l-2.215 22.305zM328.915 1.027l-.886 8.727 2.547-.044-1.107 10.765q-1.219 11.12 8.904 11.629h21.352l.82-8.727-18.85-.023q-2.88-.287-2.857-3.078l1.085-10.5 15.882.023.864-8.772z" fill="#fff"/></g></svg>
+						</a>
+						<ul>
+								<li><a href="#">История прогнозов</a></li>
+							<li><a href="#">Где сделать ставку?</a></li>
+							<li><a href="#">новости</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="line"></div>
+				<div class="container">
+					<div class="copir_mail">
+						<span>© Copyright 2017</span>
+						<span>Связаться с нами: <a href="mailto:info@mail.com">info@mail.com</a></span>		
+					</div>
+				</div>
+			</div>
+
+		</footer>
+		<nav id="mobile_mnu">
+			<ul>
+								<li><a href="#">История прогнозов</a></li>
+				<li><a href="#">Где сделать ставку?</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+		</nav>
+		<div class="hidden">			
+		</div>
+	</div>
+	
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>

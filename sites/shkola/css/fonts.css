@@ -1,0 +1,30 @@
+@font-face {
+	font-family: "Posterizer";
+	src: url("../fonts/Posterizer_KG_Sketch.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Schist";
+	src: url("../fonts/Schist Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansBold";
+	src: url("../fonts/OpenSans-Bold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansRegular";
+	src: url("../fonts/OpenSans-Regular.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansLight";
+	src: url("../fonts/OpenSans-Light.ttf");
+	font-style: normal;
+	font-weight: normal;
+}

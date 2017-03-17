@@ -1,0 +1,126 @@
+/*/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+/*	.block2 li {
+		margin-left: 56%;
+	}
+	.center_col li:nth-child(4),
+	.center_col li:nth-child(5),
+	.center_col li:nth-child(6) {
+		margin-left: 152px;	
+	}
+	.icon_wrap img {
+		margin-right: 3px;
+		margin-left: 5px;
+	}
+	header .btn {
+		right: -2%;
+	}
+	.mnu a {
+		padding: 20px 9px;
+	}*/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+/*	.left_descr img {
+		top: 26px;
+	}
+	.right_descr img {
+		top: 70px;
+	}
+	.rubric_right ul {
+		margin-top: 20px;
+	}*/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {	
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 615px) {	
+	.top_mnu {
+		display: none;
+	}
+	.slider_wrapp {
+		margin-top: 50px;
+	}
+
+	.flex_center {
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.rubric_right li {
+		margin-bottom: 10px;
+	}
+	.rubric_left a {
+		margin-top: 15px;
+		display: block;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {	
+/*	.left_descr img {
+		display: none;
+	}
+	.left_descr.map h3:before {
+		display: none;
+	}
+	.left_descr.map h3 {
+		font-size: 36px;
+		margin: 0;
+	}
+	.slick-list {
+		margin-left: 0;
+		margin-bottom: 40px;
+	}
+	.slick-dots li {
+		display: inline-block;
+	}
+	.slick-dots {
+		top: 80%;
+	}*/
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+/*	.toggle-mnu {
+		display: none
+	}*/
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}*/

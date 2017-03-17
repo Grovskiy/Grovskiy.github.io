@@ -1,0 +1,208 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+	.block2 li {
+		margin-left: 56%;
+	}
+	.center_col li:nth-child(4),
+	.center_col li:nth-child(5),
+	.center_col li:nth-child(6) {
+		margin-left: 152px;	
+	}
+	.icon_wrap img {
+		margin-right: 3px;
+		margin-left: 5px;
+	}
+	header .btn {
+		right: -2%;
+	}
+	.mnu a {
+		padding: 20px 9px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	.alignleft {
+		float: none;
+		width: 697px;
+	}
+	.block2 li {
+		margin-left: 7%;
+	}
+	.center_col li:nth-child(4),
+	.center_col li:nth-child(5),
+	.center_col li:nth-child(6) {
+		margin-left: 85px;	
+	}
+	.mnu_descr {
+		display: none;
+	}
+	.logo, header .btn {
+		position: relative;
+		left: 50%;
+		-webkit-transform: translateX(-30%);
+		-ms-transform: translateX(-30%);
+		-o-transform: translateX(-30%);
+		transform: translateX(-30%);
+	}
+	header .btn {
+		-webkit-transform: translateX(-29%);
+		-ms-transform: translateX(-29%);
+		-o-transform: translateX(-29%);
+		transform: translateX(-29%);
+		margin-top: 20px;
+	}	
+	.item_wrapper h1 {
+		left: 20px;
+	}
+	.item_wrapper .square {
+		left: 20px;
+	}
+	.item_wrapper .bl2_btn {
+		-webkit-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+		width: 180px;
+	}
+	.item_wrapper a span {
+		padding: 11px 14px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {	
+	.block2 img {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.block2 h1 {
+		text-align: left;
+		margin-bottom: 20px;
+	}
+	.block2 {
+		text-align: center;
+	}
+	.block2 li {
+		margin-left: 5%;
+	}
+	footer h2 {
+		margin-top: 20px;
+	}
+	.block2 .bl2_btn {
+		margin-bottom: 40px;
+	}
+	.item_wrapper:hover img {
+		-webkit-transform: scale(1.1) skew(0deg) translateX(-13%);
+		-ms-transform: scale(1.1) skew(0deg) translateX(-13%);
+		-o-transform: scale(1.1) skew(0deg) translateX(-13%);
+		transform: scale(1.1) skew(0deg) translateX(-13%);
+	}
+
+	.block1 {
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		background: url(../img/bl1_bg_min.jpg) top center;
+		}
+	.item_wrapper img, .item_wrapper span,
+	.item_wrapper h1, .item_wrapper .square,
+	.item_wrapper {
+		-webkit-transform: skew(0);
+		-ms-transform: skew(0);
+		-o-transform: skew(0);
+		transform: skew(0);		
+	}
+
+	.top_mnu_descr {
+		display: block;
+	}
+	.top_mnu_descr,	header .btn, .logo {
+		position: relative;
+		left: 50%;
+		-webkit-transform: translateX(-48%);
+		-ms-transform: translateX(-48%);
+		-o-transform: translateX(-48%);
+		transform: translateX(-48%);
+	}
+	.top_mnu .icon_wrap {
+		text-align: center;
+	}
+	.alignleft,
+	.alignright {
+		float: none;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	header .btn, .logo, .top_mnu_descr {
+		-webkit-transform: translateX(-47%);
+		-ms-transform: translateX(-47%);
+		-o-transform: translateX(-47%);
+		transform: translateX(-47%);
+	}
+	.block2 li {
+		margin-left: 10%;
+	}
+	.feedback p {
+		margin: 6px 0 0 0px;
+	}
+	.item_wrapper {
+		height: 181px;
+	}
+	.item_wrapper .bl2_btn {
+		bottom: 10px;
+	}
+	.item_wrapper .square {
+		top: 10px;
+		left: 8px;
+	}
+	.item_wrapper h1 {
+		top: 3px;
+		left: 100px;
+	}
+	.item_wrapper img {
+		-webkit-transform: skew(0) translateY(-30%);
+		-ms-transform: skew(0) translateY(-30%);
+		-o-transform: skew(0) translateY(-30%);
+		transform: skew(0) translateY(-30%);
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.toggle-mnu {
+		display: none
+	}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

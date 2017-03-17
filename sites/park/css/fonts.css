@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "ArialRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ArialRegular/ArialRegular.eot");
+  src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/ArialRegular/ArialRegular.woff") format("woff"),
+  url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ArialBold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/ArialBold/ArialBold.eot");
+  src: url("../fonts/ArialBold/ArialBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/ArialBold/ArialBold.woff") format("woff"),
+  url("../fonts/ArialBold/ArialBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AdobeCaslon";
+  font-style: italic;
+  font-weight: bold;
+  src: url("../fonts/Adobe-Caslon-Pro-Bold-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LatoRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Lato-Regular.ttf") format("truetype"); 
+}
+@font-face {
+  font-family: "MinionProMedium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/MinionPro-Medium.otf?#iefix")format("embedded-opentype"); 
+}
+@font-face {
+  font-family: "MinionProRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MinionPro-Regular.otf?#iefix")format("embedded-opentype"); 
+}
