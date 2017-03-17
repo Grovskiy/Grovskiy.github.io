@@ -1,4 +1,17 @@
 jQuery(document).ready(function($){
+
+
+$('.go_down').click(function(){
+  $(".cd-next").click();
+});
+
+     // // прокрутка страницы
+   // $('a[href^="#1"]').click(function() {
+   //      //Сохраняем значение атрибута href в переменной:
+   //      var target = $(this).attr('href');
+   //      $('html, body').animate({ scrollTop: $(target).offset().top }, 700); // speed of scrolling
+   //      return false;
+   //    });   
    //variables
    var hijacking= $('body').data('hijacking'),
       animationType = $('body').data('animation'),
@@ -713,6 +726,7 @@ rubka_9()
 // rubka_10()
 
 // rubka_12()
+
 
 });
 
