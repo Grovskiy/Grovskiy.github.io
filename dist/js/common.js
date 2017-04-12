@@ -110,7 +110,7 @@ if (windWidth < 700 || windWidth == 700) {
             smart: 1,
             activateMiddle: 1,
             // mouseDragging: 1,
-            // touchDragging: 1,
+            touchDragging: 1,
             releaseSwing: 1,
             startAt: 0,
             // scrollBar: $wrap.find('.scrollbar'),
@@ -187,12 +187,29 @@ $('input[type=tel]').mask("+38 (099) 999 - 99 - 99");
 
 
 $(window).scroll(function () {
-  if ($(this).scrollTop() > 534) {
-    $('.top_menu_wrap').addClass("top_menu_fix");                             
+  if ($(this).scrollTop() > 538) {
+    $('.top_menu_fix').addClass("fixmnu_active");                             
   } else {
-   $('.top_menu_wrap').removeClass("top_menu_fix");
+   $('.top_menu_fix').removeClass("fixmnu_active");
  }
 });
+$(".top_menu_wrap").clone().appendTo(".top_menu_fix");
+
+
+//при клике на поле, прибавляем к ширине 500
+$('.search_top span.icon').click(function() {
+    // $(".input_search").animate({right: "0", width: "+=100"}, 500);
+    $(".input_search").toggleClass("active");
+    $("input.icon").toggleClass("activesubmit");
+    $("span.icon").toggleClass("submitcall");
+});
+// //при клике не на поле, отнимаем от ширины 500
+// $(".input_search").blur(function(){
+//     // $(".input_search").animate({right: "0", width: "-=100"}, 500);
+//     $(".input_search").removeClass("active");
+//     $("input.icon").removeClass("activesubmit");
+//     $("span.icon").removeClass("submitcall");
+// });
 
 
 });
