@@ -631,7 +631,6 @@
 	<!-- iOS Safari -->
 	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="#fff"> -->
 	<!-- Custom Browsers Color End -->
-
 </head>
 
 <body>
@@ -690,7 +689,7 @@
 	</header>
 	<main>
 
-		<section class="main_screen_wrap" style="background-image: url(./img/food.jpg);">
+		<section class="main_screen_wrap">
 			<div class="container">
 				<div class="main_screen">
 					<h1>Вкусная еда<br>не заставит долго ждать
@@ -698,7 +697,17 @@
 					<a href="#" class="btn_delivery">ДОСТАВКА</a>
 				</div>
 			</div>
-		</section>
+		</section>		
+		<style>	
+			.main_screen_wrap {
+				background-image: url(./img/food.jpg);
+			}	
+			@media only screen and (max-width: 480px) {
+				.main_screen_wrap {
+					background-image: url(img/food_mobile.jpg);
+				}
+			}
+		</style>
 
 		<div class="container">
 			<section class="our_history">
@@ -739,7 +748,7 @@
 		<div class="container">
 			<h2 class="to_visit_head">Ждем Вас в гости!</h2>
 		</div>
-		<section class="to_visit" style="background-image: url(./img/food2.jpg);">
+		<section class="to_visit">
 			<div class="container">
 				<div class="form_wrap">
 					<h3>ЗАБРОНИРОВАТЬ СТОЛИК</h3>
@@ -772,7 +781,17 @@
 					</form>
 				</div>
 			</div>
-		</section>
+		</section>		
+		<style>	
+			.to_visit {
+				background-image: url(./img/food2.jpg);
+			}	
+			@media only screen and (max-width: 480px) {
+				.to_visit {
+					background-image: url(img/food2_mobile.jpg);
+				}
+			}
+		</style>
 
 
 	</main>
