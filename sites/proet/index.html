@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Олександр Високий</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+<!-- 	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+	<!-- Template Basic Images End -->
+
+	<style type="text/css">
+		*,
+		:after,
+		:before {
+		  -webkit-box-sizing: border-box;
+		  box-sizing: border-box;
+		}
+
+		::-webkit-input-placeholder {
+		  color: #a9a9a9;
+		  opacity: 1;
+		  font-style: italic;
+		}
+
+		:-moz-placeholder {
+		  color: #a9a9a9;
+		  opacity: 1;
+		  font-style: italic;
+		}
+
+		::-moz-placeholder {
+		  color: #a9a9a9;
+		  opacity: 1;
+		  font-style: italic;
+		}
+
+		:-ms-input-placeholder {
+		  color: #a9a9a9;
+		  opacity: 1;
+		  font-style: italic;
+		}
+
+		ul {
+		  list-style-type: none;
+		}
+
+		:-moz-submit-invalid,
+		:-moz-ui-invalid,
+		:invalid {
+		  box-shadow: none;
+		}
+
+		input {
+		  -webkit-border-radius: 0;
+		  border-radius: 0;
+		  -webkit-appearance: none;
+		  -moz-appearance: none;
+		  appearance: none;
+		}
+
+		.container {
+		  margin: 0 auto;
+		}
+
+		@media (min-width:768px) {
+		  .container {
+		    width: 750px;
+		  }
+		}
+
+		@media (min-width:992px) {
+		  .container {
+		    width: 970px;
+		  }
+		}
+
+		@media (min-width:1200px) {
+		  .container {
+		    width: 1152px;
+		  }
+		}
+
+		* {
+		  margin: 0;
+		  padding: 0;
+		}
+
+		h1,
+		h2 {
+		  font-weight: 400;
+		}
+
+		body {
+		  font-size: 16px;
+		  min-width: 320px;
+		  position: relative;
+		  line-height: 1.6;
+		  overflow-x: hidden;
+		}
+
+		.social_top {
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
+		}
+
+		.social_top .icon {
+		  background: url(img/set_top_icons.png) no-repeat;
+		  background-position: center 0;
+		  width: 23px;
+		  height: 15px;
+		  margin: 0 6px;
+		}
+
+		.social_top .icon:nth-child(2) {
+		  background-position: center -34px;
+		}
+
+		.social_top .icon:nth-child(3) {
+		  background-position: center -67px;
+		}
+
+		.social_top .icon:nth-child(4) {
+		  background-position: center -101px;
+		}
+
+		.search_top {
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
+		  position: relative;
+		}
+
+		.search_top .input_search {
+		  outline: 0;
+		  border: none;
+		  -webkit-border-radius: 3px;
+		  border-radius: 3px;
+		  font-family: forum;
+		  font-size: 15px;
+		  color: #242424;
+		  margin-right: 5px;
+		  width: 0;
+		  margin-left: -25px;
+		  display: block;
+		  background: #f0f0f0;
+		  z-index: 500;
+		}
+
+		.search_top input.icon {
+		  display: none;
+		}
+
+		.search_top .icon {
+		  background: url(img/set_top_icons.png) no-repeat;
+		  background-position: center -134px;
+		  width: 18px;
+		  height: 17px;
+		  -webkit-appearance: none;
+		  -moz-appearance: none;
+		  appearance: none;
+		  color: transparent;
+		  border: none;
+		  outline: 0;
+		}
+
+		.hamburger_wrap {
+		  margin-left: auto;
+		  margin-right: 29px;
+		  position: relative;
+		}
+
+		.hamburger {
+		  width: 43px;
+		  height: 34px;
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-box-pack: center;
+		  -webkit-justify-content: center;
+		  -ms-flex-pack: center;
+		  justify-content: center;
+		  -webkit-box-align: center;
+		  -webkit-align-items: center;
+		  -ms-flex-align: center;
+		  align-items: center;
+		  -webkit-box-orient: vertical;
+		  -webkit-box-direction: normal;
+		  -webkit-flex-direction: column;
+		  -ms-flex-direction: column;
+		  flex-direction: column;
+		}
+
+		.hamburger .line {
+		  background: #d3a6a6;
+		  width: 22px;
+		  height: 2px;
+		  margin: 2px 0;
+		}
+
+		.more_menu {
+		  position: absolute;
+		  top: 36px;
+		  right: 0;
+		  text-align: center;
+		  background: #decaca;
+		  width: 193px;
+		  padding: 20px 0;
+		  font-family: forum;
+		  font-size: 18px;
+		  border-top: 1px solid #fff;
+		  display: none;
+		}
+
+		.more_menu .mobile_menu {
+		  display: none;
+		}
+
+		.more_menu:before {
+		  content: '';
+		  position: absolute;
+		  right: 16px;
+		  top: -6px;
+		  border-left: 4px solid transparent;
+		  border-right: 4px solid transparent;
+		  border-bottom: 5px solid #fff;
+		}
+
+		.more_menu a {
+		  text-decoration: none;
+		  color: #242424;
+		  text-transform: uppercase;
+		}
+
+		.top_band {
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-box-align: center;
+		  -webkit-align-items: center;
+		  -ms-flex-align: center;
+		  align-items: center;
+		}
+
+		.top_menu_fix {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  z-index: 100;
+		  display: none;
+		}
+
+		.top_menu_wrap {
+		  -webkit-box-shadow: 0 6px 15px 0 rgba(0,0,0,.2);
+		  box-shadow: 0 6px 15px 0 rgba(0,0,0,.2);
+		  background: #fff;
+		}
+
+		.top_menu {
+		  position: relative;
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-box-pack: justify;
+		  -webkit-justify-content: space-between;
+		  -ms-flex-pack: justify;
+		  justify-content: space-between;
+		  -webkit-box-align: center;
+		  -webkit-align-items: center;
+		  -ms-flex-align: center;
+		  align-items: center;
+		}
+
+		.menu_main {
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-box-align: center;
+		  -webkit-align-items: center;
+		  -ms-flex-align: center;
+		  align-items: center;
+		  -webkit-justify-content: space-around;
+		  -ms-flex-pack: distribute;
+		  justify-content: space-around;
+		  height: 120px;
+		  width: 45%;
+		}
+
+		.menu_main a {
+		  text-transform: uppercase;
+		  text-decoration: none;
+		  font-family: forum;
+		  font-size: 18px;
+		  color: #242424;
+		  letter-spacing: 1.6px;
+		}
+
+		.menu_main li {
+		  position: relative;
+		}
+
+		.menu_main li img {
+		  display: block;
+		  padding-bottom: 2px;
+		}
+
+		.menu_main li:not(:last-child):after {
+		  position: absolute;
+		  right: 0;
+		  top: 0;
+		  width: 5px;
+		  height: 5px;
+		  -webkit-border-radius: 50%;
+		  border-radius: 50%;
+		  background: #d3a6a6;
+		}
+
+		.logo_nav {
+		  background: url(img/logo.png) center 1px no-repeat;
+		  height: 71px;
+		  display: block;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -webkit-transform: translate(-50%,-50%);
+		  -ms-transform: translate(-50%,-50%);
+		  transform: translate(-50%,-50%);
+		  text-decoration: none;
+		  text-align: center;
+		}
+
+		.logo_nav span {
+		  font-family: Exo;
+		  font-size: 13px;
+		  display: block;
+		  line-height: 15px;
+		  color: #242424;
+		  padding-top: 44px;
+		}
+
+		.logo_mobil {
+		  background: url(img/logo.png) #fff center 22px no-repeat;
+		  width: 83px;
+		  height: 96px;
+		  display: block;
+		  position: absolute;
+		  top: -20px;
+		  left: 50%;
+		  -webkit-transform: translate(-50%,0);
+		  -ms-transform: translate(-50%,0);
+		  transform: translate(-50%,0);
+		  text-decoration: none;
+		  text-align: center;
+		  z-index: 300;
+		  -webkit-border-radius: 43%;
+		  border-radius: 43%;
+		}
+
+		.logo_mobil span {
+		  font-family: Exo;
+		  font-size: 12px;
+		  display: block;
+		  line-height: 12px;
+		  color: #242424;
+		  padding-top: 62px;
+		}
+
+		.main_slider {
+		  height: 500px;
+		  background-color: rgba(0,0,0,.15);
+		  position: relative;
+		  overflow: hidden;
+		}
+
+		.main_slider .pages {
+		  position: absolute;
+		  right: 0;
+		  top: 58%;
+		  list-style: none;
+		  padding: 0;
+		}
+
+		.main_slider .controls {
+		  position: absolute;
+		  right: 0;
+		  top: 30%;
+		}
+
+		.main_slider .controls .next,
+		.main_slider .controls .prev {
+		  background: url(img/arr_slide.png) center no-repeat;
+		  width: 13px;
+		  height: 38px;
+		}
+
+		.main_slider .controls .prev {
+		  -webkit-transform: scaleX(-1);
+		  -ms-transform: scaleX(-1);
+		  transform: scaleX(-1);
+		  margin-bottom: 30px;
+		}
+
+		.oneperframe {
+		  height: 100%;
+		  line-height: 250px;
+		  overflow: hidden;
+		}
+
+		.oneperframe ul {
+		  list-style: none;
+		  margin: 0;
+		  padding: 0;
+		  height: 100%;
+		  font-size: 50px;
+		}
+
+		.oneperframe ul li {
+		  float: left;
+		  width: 227px;
+		  height: 100%;
+		  margin: 0 1px 0 0;
+		  padding: 0;
+		  background: rgba(0,0,0,.15);
+		  color: #ddd;
+		  text-align: center;
+		  background-position: center top;
+		  background-size: cover;
+		}
+
+		.main_slider_descr {
+		  position: relative;
+		  height: 100%;
+		  width: 100%;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  padding: 0 5px;
+		}
+
+		.main_slider_descr .container {
+		  position: relative;
+		  height: 100%;
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-box-align: center;
+		  -webkit-align-items: center;
+		  -ms-flex-align: center;
+		  align-items: center;
+		  -webkit-box-pack: center;
+		  -webkit-justify-content: center;
+		  -ms-flex-pack: center;
+		  justify-content: center;
+		}
+
+		.main_slider_descr .text_in_slider_wrap {
+		  border: 3px solid rgba(211,166,166,.7);
+		  padding: 10px;
+		  width: 727px;
+		  margin-left: 70px;
+		}
+
+		.main_slider_descr .text_in_slider {
+		  color: #fff;
+		  background: rgba(211,166,166,.7);
+		  text-align: center;
+		  padding: 27px 20px;
+		}
+
+		.main_slider_descr .text_in_slider h1 {
+		  font-size: 16px;
+		  line-height: 10px;
+		  font-family: Coca;
+		  letter-spacing: 1.3px;
+		}
+
+		.main_slider_descr .text_in_slider h2 {
+		  font-size: 36px;
+		  font-family: Coca;
+		  letter-spacing: 3.5px;
+		  line-height: 38px;
+		}
+
+		.main_slider_descr .text_in_slider p {
+		  font-size: 18px;
+		  font-family: forum;
+		  font-style: italic;
+		  line-height: 21px;
+		  margin-top: 15px;
+		  letter-spacing: 1px;
+		}
+
+		.main_slider_descr .portret {
+		  position: absolute;
+		  bottom: -9px;
+		  left: -4px;
+		}
+
+		section {
+		  overflow: hidden;
+		  padding-top: 95px;
+		  padding-bottom: 40px;
+		}
+
+		section h2 {
+		  font-size: 36px;
+		  line-height: 35px;
+		  color: #242424;
+		  font-family: forum;
+		  letter-spacing: .8px;
+		}
+
+		section p {
+		  font-size: 16px;
+		  line-height: 20px;
+		  font-family: Times;
+		  color: #545454;
+		  width: 570px;
+		  letter-spacing: 1.1px;
+		  margin-top: 9px;
+		}
+
+		section .wrap_head_btn {
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-box-pack: justify;
+		  -webkit-justify-content: space-between;
+		  -ms-flex-pack: justify;
+		  justify-content: space-between;
+		  -webkit-box-align: start;
+		  -webkit-align-items: flex-start;
+		  -ms-flex-align: start;
+		  align-items: flex-start;
+		}
+
+		section .button_all {
+		  color: #d3a6a6;
+		  background: 0 0;
+		  text-decoration: none;
+		  text-transform: uppercase;
+		  font-size: 16px;
+		  font-family: forum;
+		  border: 2px solid #d3a6a6;
+		  -webkit-border-radius: 5px;
+		  border-radius: 5px;
+		  padding: 8px 55px 4px;
+		  letter-spacing: 1.3px;
+		  margin-top: 4px;
+		}
+
+		.popular_book .container {
+		  position: relative;
+		}
+
+		.popular_book .container:after,
+		.popular_book .container:before {
+		  content: '';
+		  background: url(img/letters.png) no-repeat;
+		  width: 260px;
+		  height: 315px;
+		  position: absolute;
+		  z-index: -1;
+		}
+
+		.popular_book .container:before {
+		  top: 0;
+		  left: 0;
+		}
+
+		.popular_book .container:after {
+		  right: 0;
+		  bottom: 0;
+		  background-position: center -379px;
+		}
+
+		.wrap_books {
+		  margin-top: 56px;
+		  display: -webkit-box;
+		  display: -webkit-flex;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-box-pack: center;
+		  -webkit-justify-content: center;
+		  -ms-flex-pack: center;
+		  justify-content: center;
+		}
+
+		.wrap_books .book {
+		  width: 249px;
+		  margin: 0 6%;
+		  position: relative;
+		  margin-bottom: 60px;
+		}
+
+		.wrap_books .book:not(:last-child):after {
+		  content: '';
+		  position: absolute;
+		  height: 404px;
+		  width: 1px;
+		  background: #cdcdcd;
+		  right: -27%;
+		  top: 0;
+		}
+
+		.wrap_books .img_book {
+		  position: relative;
+		  width: 250px;
+		  height: 320px;
+		  overflow: hidden;
+		}
+
+		.wrap_books .img_book img {
+		  position: absolute;
+		  left: 50%;
+		  top: 50%;
+		  -webkit-transform: translate(-50%,-50%);
+		  -ms-transform: translate(-50%,-50%);
+		  transform: translate(-50%,-50%);
+		  height: 100%;
+		}
+
+		@media only screen and (max-width:1200px) {
+		  .main_slider_descr .portret {
+		    left: -74px;
+		  }
+
+		  .wrap_books .book:not(:last-child):after {
+		    right: -23%;
+		  }
+		}
+
+		@media only screen and (max-width:992px) {
+		  .search_top .input_search {
+		    margin-left: auto;
+		  }
+
+		  .main_slider {
+		    margin-top: 30px;
+		  }
+
+		  .top_band {
+		    position: fixed;
+		    top: 0;
+		    left: 0;
+		    width: 100%;
+		    z-index: 200;
+		    background: #fff;
+		    -webkit-box-shadow: 0 6px 15px 0 rgba(0,0,0,.05);
+		    box-shadow: 0 6px 15px 0 rgba(0,0,0,.05);
+		  }
+
+		  .main_slider .controls,
+		  .main_slider_descr .portret,
+		  .top_menu_wrap {
+		    display: none;
+		  }
+
+		  .main_slider_descr .text_in_slider_wrap {
+		    margin-left: 0;
+		  }
+
+		  .main_slider .pages {
+		    top: auto;
+		    bottom: 1%;
+		    right: 50%;
+		    -webkit-transform: translateX(50%);
+		    -ms-transform: translateX(50%);
+		    transform: translateX(50%);
+		  }
+
+		  .social_top .icon {
+		    margin: 0;
+		  }
+
+		  .hamburger_wrap {
+		    margin-right: 0;
+		  }
+
+		  .search_top .icon {
+		    margin-right: 6px;
+		  }
+
+		  .main_slider_descr .text_in_slider {
+		    padding: 17px 7px;
+		  }
+
+		  .wrap_books .book:not(:last-child):after {
+		    display: none;
+		  }
+
+		  .wrap_books {
+		    -webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		    -webkit-box-pack: center;
+		    -webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		    justify-content: center;
+		  }
+
+		  section .button_all {
+		    padding: 5px 17px;
+		  }
+
+		  .popular_book .container:after,
+		  .popular_book .container:before {
+		    display: none;
+		  }
+		}
+
+		@media only screen and (max-width:768px) {
+		  section p {
+		    width: auto;
+		  }
+
+		  section {
+		    padding-right: 10px;
+		    padding-left: 10px;
+		  }
+
+		  section .wrap_head_btn {
+		    -webkit-box-pack: center;
+		    -webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		    justify-content: center;
+		    -webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		  }
+
+		  section .wrap_head_btn {
+		    text-align: center;
+		  }
+
+		  section .button_all {
+		    margin-top: 30px;
+		  }
+		}
+
+		@media only screen and (min-width:992px) {
+		  .logo_mobil {
+		    display: none;
+		  }
+		}
+
+	</style>
+	<link rel="preload" href="css/fonts.min.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/fonts.min.css"></noscript>
+	<link rel="preload" href="css/libs.min.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/libs.min.css"></noscript>
+	<link rel="preload" href="css/main.min.css" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/main.min.css"></noscript>
+	<script>!function(e){"use strict";var t=function(t,n,r){function o(e){return i.body?e():void setTimeout(function(){o(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=r||"all"}var l,i=e.document,d=i.createElement("link");if(n)l=n;else{var s=(i.body||i.getElementsByTagName("head")[0]).childNodes;l=s[s.length-1]}var u=i.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",o(function(){l.parentNode.insertBefore(d,n?l:l.nextSibling)});var f=function(e){for(var t=d.href,n=u.length;n--;)if(u[n].href===t)return e();setTimeout(function(){f(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=f,f(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(e){if(e.loadCSS){var t=loadCSS.relpreload={};if(t.support=function(){try{return e.document.createElement("link").relList.supports("preload")}catch(e){return!1}},t.poly=function(){for(var t=e.document.getElementsByTagName("link"),n=0;n<t.length;n++){var r=t[n];"preload"===r.rel&&"style"===r.getAttribute("as")&&(e.loadCSS(r.href,r,r.getAttribute("media")),r.rel=null)}},!t.support()){t.poly();var n=e.setInterval(t.poly,300);e.addEventListener&&e.addEventListener("load",function(){t.poly(),e.clearInterval(n)}),e.attachEvent&&e.attachEvent("onload",function(){e.clearInterval(n)})}}}(this);</script>
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<!-- <meta name="theme-color" content="#fff"> -->
+	<!-- Windows Phone -->
+	<!-- <meta name="msapplication-navbutton-color" content="#fff"> -->
+	<!-- iOS Safari -->
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="#fff"> -->
+	<!-- Custom Browsers Color End -->
+
+</head>
+
+<body>
+	<header>
+		<a href="../../index.html" class="btn_backb" 
+		style="position: fixed; 
+		padding: 10px 20px; 
+		background-color: #5e68af; 
+		color: #fff; 
+		text-decoration: none;
+		font-weight: normal;
+		z-index: 1000;">Назад</a>
+
+		<!-- Пример создания попаба fancyBox3
+		Документация  http://fancyapps.com/fancybox/3/docs/ -->
+
+		<!-- <h2><a data-fancybox data-src="#dno" href="">click</a></h2>
+
+		<div class="hidden">
+			<div class="qq" id='dno'>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			</div>
+		</div> -->
+
+
+
+			<div class="container top_band">
+				<div class="social_top">
+					<a href="#" class="icon"></a>
+					<a href="#" class="icon"></a>
+					<a href="#" class="icon"></a>
+					<a href="#" class="icon"></a>
+				</div>
+				<div class="hamburger_wrap">
+					<div class="hamburger">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+					<ul class="more_menu">
+						<li><a href="#">СТАТТІ</a></li>
+						<li><a href="#">СПІВПРАЦЯ</a></li>
+
+						<li><a href="#" class="mobile_menu">НОВИНИ</a></li>
+						<li><a href="#" class="mobile_menu">Поезія</a></li>
+						<li><a href="#" class="mobile_menu">пісні</a></li>
+						<li><a href="#" class="mobile_menu">КУПИТИ КНИГУ</a></li>
+						<li><a href="#" class="mobile_menu">ВІДЕО</a></li>
+						<li><a href="#" class="mobile_menu">ГАЛЕРЕЯ</a></li>
+						<li><a href="#" class="mobile_menu">ВІДГУКИ</a></li>
+						<li><a href="#" class="mobile_menu">контакти</a></li>
+					</ul>
+
+				</div>
+				<form class="search_top" action="#">
+					<input type="text" class="input_search">
+					<input type="submit" class="icon">
+					<span href="#" class="icon"></span>
+				</form>				
+				<a href="index.html" class="logo_mobil">
+					<span>Олександр <br>Високий</span>
+				</a>
+			</div>
+
+			<div class="main_slider">
+
+				<div class="oneperframe" id="oneperframe">
+					<ul class="">
+						<li style="background-image: url(img/bg_slide_1.jpg);"></li>
+						<li style="background-image: url(img/bg_slide_2.jpg);"></li>
+						<li style="background-image: url(img/bg_slide_3.jpg);"></li>
+					</ul>
+				</div>
+
+				<div class="main_slider_descr">
+					<div class="container">
+
+						<div class="text_in_slider_wrap">
+							<div class="text_in_slider">
+								<h1>Олександр Високий</h1>
+								<h2>Кохану людину треба бачити серцем!</h2>
+								<p>Які б життєві проблеми не перешкоджали нам, яким би нестерпним не здавалось життя, але в світі є те, що дає надію, надихає, виводить нас з депресії, зневіри, відчаю, робить щасливими, це – кохання. Величне і прекрасне почуття, дане нам Богом.
+								</p>
+							</div>
+						</div>
+
+						<img src="img/portret.png" alt="Олександр Високий" class="portret">
+
+
+						<div class="controls">
+							<div class="prev"></div>
+							<div class="next"></div>
+						</div>					
+						<ul class="pages"></ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="top_menu_fix"></div>
+			<div class="top_menu_wrap">
+				<nav class="container top_menu">
+					<ul class="menu_main">
+						<li><a href="#">НОВИНИ</a></li>
+						<li><img src="img/point.svg" alt="point"></li>
+						<li><a href="#">Поезія</a></li>
+						<li><img src="img/point.svg" alt="point"></li>
+						<li><a href="#">пісні</a></li>
+						<li><img src="img/point.svg" alt="point"></li>
+						<li><a href="#">КУПИТИ КНИГУ</a></li>
+					</ul>
+					<a href="index.html" class="logo_nav">
+						<span>Олександр <br>Високий</span>
+					</a>	
+					<ul class="menu_main">
+						<li><a href="#">ВІДЕО</a></li>
+						<li><img src="img/point.svg" alt="point"></li>
+						<li><a href="#">ГАЛЕРЕЯ</a></li>
+						<li><img src="img/point.svg" alt="point"></li>
+						<li><a href="#">ВІДГУКИ</a></li>
+						<li><img src="img/point.svg" alt="point"></li>
+						<li><a href="#">контакти</a></li>
+					</ul>
+				</nav>
+			</div>
+
+		</header>
+		<main>
+
+			<section class="popular_book">
+				<div class="container">
+
+					<div class="wrap_head_btn">
+						<div>
+							<h2>Популярні книги Олександра Високого</h2>
+							<p>На сьогоднішній день Олександр Високий - це відомий Український поет, який за роки своєї творчості має вже сім опублікованих книг</p>
+						</div>
+						<a href="#" class="button_all">всі книги</a>
+					</div>
+
+					<div class="wrap_books">
+						<div class="book">
+							<div class="img_book">
+								<img src="img/book1.jpg" alt="Кохання світ безмежний">
+							</div>
+							<h3>«Кохання світ безмежний: <br>поезії / О. М. Високий»</h3>
+							<a href="#" class="btn_more">ДЕТАЛЬНІШЕ</a>
+						</div>
+						<div class="book">
+							<div class="img_book">
+								<img src="img/book2.jpg" alt="Кохання світ безмежний">
+							</div>
+							<h3>«Кохання світ безмежний: <br>поезії / О. М. Високий»</h3>
+							<a href="#" class="btn_more">ДЕТАЛЬНІШЕ</a>
+						</div>
+						<div class="book">
+							<div class="img_book">
+								<img src="img/book3.jpg" alt="Кохання світ безмежний">
+							</div>
+							<h3>«Кохання світ безмежний: <br>поезії / О. М. Високий»</h3>
+							<a href="#" class="btn_more">ДЕТАЛЬНІШЕ</a>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<div class="call_action">
+				<div class="container">
+					<span>Сподобалась книга Олександра Високого?</span>
+					<a href="#" class="button_action">КУПИТИ КНИГУ</a>
+				</div>
+			</div>
+
+			<section class="last_news">
+				<div class="container">
+					<div class="wrap_head_btn">
+						<div>
+							<h2>Останні новини в діяльності поета</h2>
+							<p>На сьогоднішній день Олександр Високий - це відомий Український поет, який за роки своєї творчості має вже сім опублікованих книг</p>
+						</div>
+						<a href="#" class="button_all">ВСІ НОВИНИ</a>
+					</div>
+					<div class="item_news">
+
+						<div class="item">
+							<a href="#" class="header_btn">Олександр Високий на творчому вечорі "Мистецтво молодих" у Будинку звукозапису Національної радіокомпанії України.</a>
+							<div class="date_btn">
+								<span>24 червня 2014 р.</span>
+								<a href="#" class="news_more">Детальніше</a>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#" class="header_btn">Олександр Високий на творчому вечорі "Мистецтво молодих" у Будинку звукозапису Національної радіокомпанії України.</a>
+							<div class="date_btn">
+								<span>24 червня 2014 р.</span>
+								<a href="#" class="news_more">Детальніше</a>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#" class="header_btn">Олександр Високий на творчому вечорі "Мистецтво молодих" у Будинку звукозапису Національної радіокомпанії України.</a>
+							<div class="date_btn">
+								<span>24 червня 2014 р.</span>
+								<a href="#" class="news_more">Детальніше</a>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#" class="header_btn">Олександр Високий на творчому вечорі "Мистецтво молодих" у Будинку звукозапису Національної радіокомпанії України.</a>
+							<div class="date_btn">
+								<span>24 червня 2014 р.</span>
+								<a href="#" class="news_more">Детальніше</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="star_life">
+				<div class="container">
+					<h2>Зіркове життя Олександра Високого</h2>
+					<p>На сьогоднішній день Олександр Високий - це відомий Український поет, який за роки своєї творчості має вже сім опублікованих книг</p>
+					<div class="video_star">
+						<div class="text_video">
+							<iframe width="500" height="350" src="https://www.youtube.com/embed/6d1RqXTVfJY" frameborder="0" allowfullscreen></iframe>
+							<p>Виступ Олександра Високого на телеканалі "112 Україна" 14 лютого 2014 р. з нагоди
+								Дня Закоханих
+							</p>
+						</div>
+						<div class="text_video">
+							<iframe width="500" height="350" src="https://www.youtube.com/embed/6d1RqXTVfJY" frameborder="0" allowfullscreen></iframe>
+							<p>Олександр Високий на ювілейному вечорі Іво Бобула в палаці "Україна"
+								19 грудня 2013 року.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="comments">
+				<div class="container">
+					<h2>Відгуки читачів</h2>
+					<p>На сьогоднішній день Олександр Високий - це відомий Український поет, який за роки своєї творчості має вже сім опублікованих книг, а також співпрацю з відомими співаками, котрі виконують його пісні.</p>
+					<div class="commentframe_wrap">
+						<div class="commentframe" id="commentframe">
+							<ul class="">
+								<li>
+									<div class="slide">
+										<div class="avatar"><img src="img/avatar.jpg" alt=""></div>
+										<p>Пане Олександре, Ваші вірші дуже теплі. Я знайшла в них так багато близького і важливого для себе - вони відкрили мені кохання, яким воно є в душі україномовного чоловіка... таке красиве і світле... і рідне... Будьте щасливим! 
+										</p>
+										<h3>Катерина</h3>
+									</div>
+								</li>
+								<li>
+									<div class="slide">
+										<div class="avatar"><img src="img/avatar.jpg" alt=""></div>
+										<p>Пане Олександре, Ваші вірші дуже теплі. Я знайшла в них так багато близького і важливого для себе - вони відкрили мені кохання, яким воно є в душі україномовного чоловіка... таке красиве і світле... і рідне... Будьте щасливим! 
+										</p>
+										<h3>Катерина</h3>
+									</div>
+								</li>
+								<li>
+									<div class="slide">
+										<div class="avatar"><img src="img/avatar.jpg" alt=""></div>
+										<p>Пане Олександре, Ваші вірші дуже теплі. Я знайшла в них так багато близького і важливого для себе - вони відкрили мені кохання, яким воно є в душі україномовного чоловіка... таке красиве і світле... і рідне... Будьте щасливим! 
+										</p>
+										<h3>Катерина</h3>
+									</div>
+								</li>
+								<li>
+									<div class="slide">
+										<div class="avatar"><img src="img/avatar.jpg" alt=""></div>
+										<p>Пане Олександре, Ваші вірші дуже теплі. Я знайшла в них так багато близького і важливого для себе - вони відкрили мені кохання, яким воно є в душі україномовного чоловіка... таке красиве і світле... і рідне... Будьте щасливим! 
+										</p>
+										<h3>Катерина</h3>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="controls">
+						<div class="prev"></div>
+						<div class="next"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="feedback">
+				<div class="container">
+					<h2>Написати Олександру Високому</h2>
+					<form action="#" id="feedback">
+						<textarea placeholder="Текст звертання..." name="comment"></textarea>
+						<div class="input_flex">
+							<input type="text" placeholder="Ім’я..." name="firstname">
+							<input type="tel" placeholder="Телефон..." name="number">
+							<input type="submit" value="НАДІСЛАТИ">
+						</div>
+					</form>
+					<h3>Олександр Високий - Сучасний Український поет</h3>
+					<p>Українська мова завжди вважалася самою гарною, мелодійною й співучою мовою серед всіх мов світу. Письменники України довгі роки звеличували українську мову завдяки творам, пісням, віршам.</p>
+					<p>Українська мова неймовірна й багата, завдяки їй можливо найкращім чином виразити всі переживання людини, а також передати всю гамму почуттів які переповнюють серце й душу. Таким шляхом пішов і сучасний поет Олександр Високий, так як українська мова є найкращим інструментом для самовираження.</p>
+					<p>На сьогодні Олександр Високий має велику збірку поезії і це ще не кінець, так як у письменника велике натхнення. И все це завдяки коханню до його дружини. А що як не кохання спонукає нас творити красу, створювати щось нове и прекрасне, що буде дарувати радість и тепло не тільки самому творцеві, його музі, а й всім оточуючим. Коли почуття б’ють через край, хочеться кричати про це, й поділитися своїм щастям з всім світом. А що ж як не вірші ще зможе так гарно передати всі емоції, почуття й переживання поета читачеві?</p>
+					<p>На сьогоднішній день Олександр Високий – це відомий Український поет, який за роки своєї творчості має вже сім опублікованих книг, а також співпрацю з відомими співаками, котрі виконують його пісні. Дуже прикро, що на сьогоднішній день Українські поети – це велика рідкість. Але від цього українські поети є ще ціннішими самородками української культури.</p>
+					<p>Ознайомитися з творчістю письменника Олександра Високого, а також зв'язатися з ним, Ви можете відвідавши сайт Високого. Тут Ви знайдете вірші поета які зачаровують Вашу душу і серце, і подарують Вам багато позитивних емоцій. Кожен вірш поета має свою історію, і вчитавшись в його глибинний зміст кожен знайде в них щось близьке и важливе для себе.</p>
+				</div>
+			</section>
+
+		</main>
+
+		<footer>
+
+			<div class="container">
+
+				<div class="footer_flex">
+					<div class="about_footer">
+						<h2>ПРО ПОЕТА</h2>
+						<p>Українська мова завжди вважалася самою гарною, мелодійною й співучою мовою серед всіх мов світу. Письменники України довгі роки звеличували українську мову завдяки творам, пісням, віршам.</p>
+						<p>Мелодійною й співучою мовою серед всіх мов світу. Письменники України довгі роки звеличували українську мову завдяки творам, пісням, віршам.</p>
+					</div>
+					<div class="item">
+						<h2>ОСТАННІ НОВИНИ</h2>
+						<div class="news_footer">
+							<div class="new">
+								<div class="new_img"><img src="img/footer_new.jpg" alt="#"></div>
+								<div>
+									<a href="#">Олександр Високий на творчому вечорі "Мистецтво молодих" у Будинку звукозапису Національної радіокомпанії України.</a>
+									<span>24 червня 2014 р.</span>
+								</div>
+							</div>
+							<div class="new">
+								<div class="new_img"><img src="img/footer_new.jpg" alt="#"></div>
+								<div>
+									<a href="#">Олександр Високий на творчому вечорі "Мистецтво молодих" у Будинку звукозапису Національної радіокомпанії України.</a>
+									<span>24 червня 2014 р.</span>
+								</div>
+							</div>
+							<div class="new">
+								<div class="new_img"><img src="img/footer_new.jpg" alt="#"></div>
+								<div>
+									<a href="#">Олександр Високий на творчому вечорі "Мистецтво молодих" у Будинку звукозапису Національної радіокомпанії України.</a>
+									<span>24 червня 2014 р.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="popular_book_footer">
+						<h2>ПОПУЛЯРНІ КНИГИ</h2>
+						<div class="book_buy_wrap">
+							<a href="#" class="btn_book">«Кохання світ безмежний: поезії / О. М. Високий»</a>
+							<a href="#" class="btn_buy">Купити книгу</a>
+						</div>
+						<div class="book_buy_wrap">
+							<a href="#" class="btn_book">«Кохання світ безмежний: поезії / О. М. Високий»</a>
+							<a href="#" class="btn_buy">Купити книгу</a>
+						</div>
+						<div class="book_buy_wrap">
+							<a href="#" class="btn_book">«Кохання світ безмежний: поезії / О. М. Високий»</a>
+							<a href="#" class="btn_buy">Купити книгу</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="footer_flex">
+					<div class="social_footer">
+						<h2>СОЦІАЛЬНІ МЕРЕЖІ</h2>
+						<p>Українська мова завжди вважалася самою гарною, мелодійною й співучою мовою серед всіх мов світу. Письменники України довгі роки звеличували українську мову завдяки творам, пісням, віршам.</p>
+					</div>
+					<div class="tags_footer">
+						<h2>ПОПУЛЯРНІ ТЕГИ</h2>
+						<ul>
+							<li><a href="#">Вірші</a></li>
+							<li><a href="#">Пісні</a></li>
+							<li><a href="#">Останні новини</a></li>
+							<li><a href="#">Статті</a></li>
+							<li><a href="#">Популярне</a></li>
+							
+							<li><a href="#">Вірші</a></li>
+							<li><a href="#">Останні новини</a></li>
+							<li><a href="#">Пісні</a></li>
+							<li><a href="#">Популярне</a></li>
+							<li><a href="#">Статті</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="social_buttons">
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+				</div>	
+			</div>
+			<div class="copiryght">
+				<span>© 2016 Олександр Високий</span>
+			</div>
+
+		</footer>
+
+
+
+
+		<script src="js/libs.min.js"></script>
+		<script src="js/common.js"></script>
+
+	</body>
+	</html>
