@@ -653,17 +653,11 @@ function rubka_12() {
 
 
 
-// bg()
 setTimeout(rubka_7, 6500)
 setTimeout(rubka_5, 5500)
 setTimeout(rubka_12, 3000)
 setTimeout(rubka_1, 7500)
 setTimeout(rubka_3, 3000)
-// setTimeout(rubka_10, 10200)
-// setTimeout(rubka_12, 14800)
-// setTimeout(rubka_11, 28000)
-// setTimeout(rubka_2, 209000)
-// setTimeout(rubka_8, 26800)
 
 
 
