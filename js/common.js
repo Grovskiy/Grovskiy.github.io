@@ -570,97 +570,53 @@ $.Velocity
 
 $(function() {
 
-// Rubu Col_1
+  function moveRubka(rubkaClass, durOne, durTwo, topStart, topEnd, rightEnd, nameFuncCompl) {
+   $(rubkaClass)
+   .velocity({ right: "400px", top: topStart }, { duration: durOne })
+   .velocity({ scaleX: "1" })
+   .velocity({ top: topEnd })   
+   .velocity({ right: rightEnd, top: topStart }, { duration: durTwo }) 
+   .velocity({ top: topEnd })   
+   .velocity({ scaleX: "-1", }, { complete: function() { nameFuncCompl(); } });
+ };
+  function moveLeftRubka(rubkaClass, durOne, durTwo, topStart, topEnd, rightEnd, nameFuncCompl) {
+   $(rubkaClass)
+   .velocity({ left: "400px", top: topStart }, { duration: durOne })
+   .velocity({ scaleX: "-1" })
+   .velocity({ top: topEnd })   
+   .velocity({ left: rightEnd, top: topStart }, { duration: durTwo }) 
+   .velocity({ top: topEnd })   
+   .velocity({ scaleX: "1", }, { complete: function() { nameFuncCompl(); } });
+ };
 function rubka_1() {
-   $(".main .item:nth-child(1) object:nth-child(1)")
-   .velocity({ right: "400px", top: "-5%" }, { duration: 17500 })
-   .velocity({ scaleX: "1" })
-   .velocity({ top: "20%" })   
-   .velocity({ right: "-600px", top: "-5%" }, { duration: 16900 }) 
-   .velocity({ top: "20%" })   
-   .velocity({ scaleX: "-1", }, { complete: function() { rubka_1(); } });
+  moveRubka(".main .item:nth-child(1) object:nth-child(1)", 17500, 16900, "-5%", "20%", "-600px", rubka_1);
 };
-// Rubu Col_2
 function rubka_3() {
-   $(".main .item:nth-child(2) object:nth-child(1)")
-   .velocity({ right: "400px", top: "10%" }, { duration: 19000 })
-   .velocity({ scaleX: "1" })
-   .velocity({ top: "30%" })   
-   .velocity({ right: "-450px", top: "10%" }, { duration: 14200 }) 
-   .velocity({ top: "30%" })   
-   .velocity({ scaleX: "-1", }, { complete: function() { rubka_3(); } });
+  moveRubka(".main .item:nth-child(2) object:nth-child(1)", 19000, 14200, "10%", "30%", "-450px", rubka_3);
 };
 function rubka_4() {
-   $(".main .item:nth-child(2) object:nth-child(2)")   
-   .velocity({ left: "400px", top: "40%" }, { duration: 19000 })
-   .velocity({ scaleX: "-1" })
-   .velocity({ top: "70%" })   
-   .velocity({ left: "-700px", top: "40%" }, { duration: 17000 }) 
-   .velocity({ top: "70%" })   
-   .velocity({ scaleX: "1", }, { complete: function() { rubka_4(); } });
+  moveLeftRubka(".main .item:nth-child(2) object:nth-child(2)", 19000, 17000, "40%", "70%", "-700px", rubka_4);
 };
-// Rubu Col_3
 function rubka_5() {
-   $(".main .item:nth-child(3) object:nth-child(1)")   
-   .velocity({ right: "400px", top: "-10%" }, { duration: 17000 })
-   .velocity({ scaleX: "1" })
-   .velocity({ top: "30%" })   
-   .velocity({ right: "-700px", top: "-10%" }, { duration: 17000 }) 
-   .velocity({ top: "30%" })   
-   .velocity({ scaleX: "-1", }, { complete: function() { rubka_5(); } });
+  moveRubka(".main .item:nth-child(3) object:nth-child(1)", 17000, 17000, "-10%", "30%", "-700px", rubka_5);
 };
-// Rubu Col_4
 function rubka_7() {
-   $(".main .item:nth-child(4) object:nth-child(1)")
-   .velocity({ left: "400px", top: "20%" }, { duration: 19000 })
-   .velocity({ scaleX: "-1" })
-   .velocity({ top: "50%" })   
-   .velocity({ left: "-700px", top: "20%" }, { duration: 16000 }) 
-   .velocity({ top: "50%" })   
-   .velocity({ scaleX: "1", }, { complete: function() { rubka_7(); } });
+  moveLeftRubka(".main .item:nth-child(4) object:nth-child(1)", 19000, 16000, "20%", "50%", "-700px", rubka_7);
 };
-// Rubu Col_5
 function rubka_9() {
-   $(".main .item:nth-child(5) object:nth-child(1)")
-   .velocity({ right: "400px", top: "10%" }, { duration: 17000 })
-   .velocity({ scaleX: "1" })
-   .velocity({ top: "35%" })   
-   .velocity({ right: "-700px", top: "10%" }, { duration: 14000 }) 
-   .velocity({ top: "35%" })   
-   .velocity({ scaleX: "-1", }, { complete: function() { rubka_9(); } });
+  moveRubka(".main .item:nth-child(5) object:nth-child(1)", 17000, 14000, "10%", "35%", "-700px", rubka_9);
 };
-// Rubu Col_6
 function rubka_11() {
-   $(".main .item:nth-child(6) object:nth-child(1)")
-   .velocity({ right: "400px", top: "10%" }, { duration: 12000 })
-   .velocity({ scaleX: "1" })
-   .velocity({ top: "35%" })   
-   .velocity({ right: "-550px", top: "10%" }, { duration: 15000 }) 
-   .velocity({ top: "35%" })   
-   .velocity({ scaleX: "-1", }, { complete: function() { rubka_11(); } });
+  moveRubka(".main .item:nth-child(6) object:nth-child(1)", 12000, 15000, "10%", "35%", "-550px", rubka_11);
 };
 function rubka_12() {
-   $(".main .item:nth-child(6) object:nth-child(2)")   
-   // .delay(5000)
-   .velocity({ right: "400px", top: "35%" }, { duration: 12001 })
-   .velocity({ scaleX: "1" })
-   .velocity({ top: "70%" })   
-   .velocity({ right: "-450px", top: "35%" }, { duration: 16000 }) 
-   .velocity({ top: "70%" })   
-   .velocity({ scaleX: "-1", }, { complete: function() { rubka_12(); } });
+  moveRubka(".main .item:nth-child(6) object:nth-child(2)", 12001, 16000, "35%", "70%", "-450px", rubka_12);
 };
-
-
-
-
 setTimeout(rubka_7, 6500)
 setTimeout(rubka_5, 5500)
 setTimeout(rubka_12, 3000)
 setTimeout(rubka_1, 7500)
 setTimeout(rubka_3, 3000)
-
-
-
 rubka_4()
 rubka_11()
 rubka_9()
