@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>test</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+<!-- 	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"> -->
+	<!-- Template Basic Images End -->
+
+	<link rel="stylesheet" href="css/fonts.min.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<!-- Custom Browsers Color Start -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<!-- <meta name="theme-color" content="#fff"> -->
+	<!-- Windows Phone -->
+	<!-- <meta name="msapplication-navbutton-color" content="#fff"> -->
+	<!-- iOS Safari -->
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="#fff"> -->
+	<!-- Custom Browsers Color End -->
+
+</head>
+
+<body>
+	<header>
+
+		<!-- Пример создания попаба fancyBox3 -->
+		<!-- Документация  http://fancyapps.com/fancybox/3/docs/ -->
+
+		<!-- <h2><a data-fancybox data-src="#dno" href="">click</a></h2> -->
+
+<!-- <div class="hidden">
+	<div class="qq" id='dno'>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	</div>
+</div> -->
+<div class="container">
+	<div class="header">
+		<div class="hamburger-menu-wrap">
+			<div class="hamburger-menu">
+				<div class="bar"></div>	
+			</div>
+		</div>
+		<nav class="top_menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Store</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="header-right">
+
+
+
+
+			<form action="#" class="search-wrap searchbox">
+				<input type="search" placeholder="Search" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+				<input type="submit" class="searchbox-submit" value="">	
+
+				<span class="searchbox-icon">
+					<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 16.209 16.27"><style/><path class="ic_search" fill-rule="evenodd" clip-rule="evenodd" fill="#B1B8BC" d="M15.831 14.44l-3.943-3.92a6.45 6.45 0 0 0 1.302-3.885c0-3.596-2.931-6.511-6.546-6.511C3.028.124.098 3.039.098 6.635s2.93 6.51 6.546 6.51a6.533 6.533 0 0 0 3.808-1.221l3.954 3.932a1.01 1.01 0 0 0 1.426 0 .999.999 0 0 0-.001-1.416zm-9.187-3.298c-2.503 0-4.532-2.017-4.532-4.506s2.029-4.508 4.532-4.508 4.531 2.019 4.531 4.508-2.029 4.506-4.531 4.506z"/></svg>
+				</span>
+			</form>
+			<div class="social_icon">
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="8" height="17" viewBox="0 0 8 17"><path fill-rule="evenodd" clip-rule="evenodd" fill="#B1B8BC" d="M7.424.033H5.82s-3.344-.25-3.344 3.275v2.673H.205L.211 7.88h2.264l.002 9.092h2.275V7.88H7.26l.535-1.899h-3.03V3.236s-.025-.925 1.059-.925h1.59l.01-2.278z"/></svg>
+				</a>	
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 16.149 13.107"><path fill="#B1B8BC" d="M16.086 1.593a6.591 6.591 0 0 1-1.889.518A3.3 3.3 0 0 0 15.642.296a6.624 6.624 0 0 1-2.088.796A3.284 3.284 0 0 0 11.156.055a3.285 3.285 0 0 0-3.202 4.03A9.35 9.35 0 0 1 1.179.657a3.28 3.28 0 0 0 1.017 4.379 3.258 3.258 0 0 1-1.488-.411v.042a3.283 3.283 0 0 0 2.637 3.216 3.268 3.268 0 0 1-1.486.057 3.286 3.286 0 0 0 3.071 2.277 6.598 6.598 0 0 1-4.867 1.359 9.31 9.31 0 0 0 5.039 1.475c6.046 0 9.353-5 9.353-9.334 0-.142-.004-.284-.01-.425a6.677 6.677 0 0 0 1.641-1.699z"/></svg>
+				</a>	
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 16.172 16.161"><path fill="#B1B8BC" d="M8.379 9.229c-.44-.331-1.398-1.005-1.398-1.458 0-.531.152-.792.955-1.417.82-.639 1.402-1.482 1.402-2.528 0-1.142-.468-2.174-1.348-2.676h1.246L10.299.065h-4.75c-2.409 0-4.418 1.746-4.418 3.694 0 1.99 1.32 3.577 3.586 3.577.158 0 .311-.01.46-.019a1.997 1.997 0 0 0-.251.923c0 .553.305.868.682 1.233-.285 0-.561.008-.861.008-2.76 0-4.675.873-4.675 3.574 0 1.789 2.313 3.041 5.072 3.041 3.146 0 5.108-1.662 5.081-3.566-.023-1.434-.312-2.155-1.846-3.301zm-5.323-5.37c-.211-1.582.854-2.684 2.069-2.649 1.214.037 2.005 1.227 2.214 2.809.209 1.583-.489 2.557-1.703 2.522-1.216-.037-2.37-1.098-2.58-2.682zM5.09 14.924c-1.792 0-3.087-1.029-3.087-2.291 0-1.238 1.452-1.895 3.208-1.895.653 0 2.612 0 3.22 1.514.054.139.058.293.058.445 0 1.264-.879 2.227-3.399 2.227zM16.1 3.11h-2.004v1.984h-1.039V3.11h-1.971V2.108h1.971V.066h1.039v2.042H16.1V3.11z"/></svg>
+				</a>	
+			</div>
+			<div class="login-wrap">
+				<div class="login-btn">
+					<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 16.354 16.421"><path fill-rule="evenodd" clip-rule="evenodd" fill="#B1B8BC" d="M15.177 16.277H1.147a1.03 1.03 0 0 1-1.031-1.031v-.592c0-.871 1.031-1.031 1.031-1.031l5.359-2.656C5.064 9.81 4.24 7.531 4.24 6.404V3.827C4.24 2.119 6.087.218 8.365.218s3.842 1.901 3.842 3.609v2.577c0 1.239-.816 3.447-2.244 4.572l5.213 2.646s1.031.176 1.031 1.031v.592a1.029 1.029 0 0 1-1.03 1.032z"/></svg>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</header>
+<main>
+
+	<div class="container ">
+		<section class="content_main-wrap">
+
+
+			<div class="content-left-wrap">
+				<div class="content-left">
+					<nav class="left_menu">
+						<ul class="left_menu-ul">
+							<li class="left_menu-li">
+								<a href="#"><span class="menu-icon icon_left">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24.305" height="21.736" viewBox="0 0 24.305 21.736"><path fill="#c5cdd1" d="M23.967 11.26L13.167.406c-.54-.54-1.458-.54-2.052 0L.315 11.26c-.54.594-.378 1.026.432 1.026h2.268v8.37c0 .594.054 1.08 1.134 1.08h5.238v-8.37h5.508v8.37h5.508c.864 0 .864-.486.864-1.08v-8.37h2.268c.81-.001 1.026-.433.432-1.026z"/></svg>
+								</span><span class="menu-punkt">Home</span></a>
+								<ul class="sub_menu">
+									<li>
+										<a href="#" class="sub_menu-main_link">Entertainment
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Film</a>
+										<a href="#" class="sub_menu-link">Gaming</a>
+										<a href="#" class="sub_menu-link">Music</a>
+										<a href="#" class="sub_menu-link">Sport</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Business
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Jobs</a>
+										<a href="#" class="sub_menu-link">Marketing</a>
+										<a href="#" class="sub_menu-link">Media</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Tech 
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Software & Apps</a>
+										<a href="#" class="sub_menu-link">Gadgets</a>
+										<a href="#" class="sub_menu-link">Mobile</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Lifestyle
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Home</a>
+										<a href="#" class="sub_menu-link">Health & Fitmess</a>
+										<a href="#" class="sub_menu-link">Travel & Leisure</a>
+									</li>
+								</ul>
+							</li>
+							<li class="left_menu-li">
+								<a href="#"><span class="menu-icon icon_left">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22.051" height="22.051" viewBox="0 0 22.051 22.051"><path fill="#c5cdd1" d="M3.675 19.601a2.457 2.457 0 0 0 2.45 2.45 2.426 2.426 0 0 0 2.45-2.45 2.457 2.457 0 0 0-2.45-2.45c-1.323 0-2.45 1.127-2.45 2.45zm12.251 0a2.457 2.457 0 0 0 2.45 2.45 2.426 2.426 0 0 0 2.45-2.45 2.457 2.457 0 0 0-2.45-2.45c-1.323 0-2.45 1.127-2.45 2.45zm-7.889-5.782L21.61 9.947c.245-.049.441-.343.441-.637V2.597H4.802V.49c0-.245-.245-.49-.49-.49H.49C.245 0 0 .245 0 .49v1.96h2.401l2.401 11.123.245 1.127v1.862c0 .245.196.49.49.49H21.561c.294 0 .49-.245.49-.49V14.7H8.281c-1.421.001-1.421-.538-.244-.881z"/></svg>
+								</span><span class="menu-punkt">Store</span></a>
+								<ul class="sub_menu">
+									<li>
+										<a href="#" class="sub_menu-main_link">Tech 
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Software & Apps</a>
+										<a href="#" class="sub_menu-link">Gadgets</a>
+										<a href="#" class="sub_menu-link">Mobile</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Business
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Jobs</a>
+										<a href="#" class="sub_menu-link">Marketing</a>
+										<a href="#" class="sub_menu-link">Media</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Entertainment
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Film</a>
+										<a href="#" class="sub_menu-link">Gaming</a>
+										<a href="#" class="sub_menu-link">Music</a>
+										<a href="#" class="sub_menu-link">Sport</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Lifestyle
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Home</a>
+										<a href="#" class="sub_menu-link">Health & Fitmess</a>
+										<a href="#" class="sub_menu-link">Travel & Leisure</a>
+									</li>
+								</ul>
+							</li>
+							<li class="left_menu-li">
+								<a href="#"><span class="menu-icon icon_left">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22.569" height="22.586" viewBox="0 0 22.569 22.586"><path fill="#c5cdd1" d="M21.277 5.249l.329-.332c.652-.673.976-1.373.963-2.081-.012-.7-.352-1.374-1.007-2.002C20.985.28 20.348 0 19.67 0c-1.063 0-1.838.687-2.049.897l-.447.446 4.103 3.906zM16.467 2.052c-2.762 2.765-9.503 9.522-9.503 9.522a.56.56 0 0 0-.14.243c-.229.849-1.38 4.618-1.391 4.656a.543.543 0 0 0 .514.7c.055 0 .11-.009.164-.025.039-.014 3.925-1.271 4.564-1.462a.527.527 0 0 0 .224-.132c.335-.331 7.029-6.965 9.67-9.599l-4.102-3.903z"/><path fill="#c5cdd1" d="M11.757 17.353a2.555 2.555 0 0 1-1.064.628c-.616.185-4.218 1.244-4.348 1.287a2.636 2.636 0 0 1-.79.125c-.679 0-1.223-.203-1.702-.684a2.523 2.523 0 0 1-.63-2.541c.741-2.433 1.246-4.122 1.373-4.592.109-.413.332-.804.641-1.12l7.874-7.87H1.321C.497 2.586 0 3.163 0 3.99v17.013c0 .828.497 1.583 1.321 1.583h16.144c.825 0 1.494-.713 1.494-1.541l.019-10.793c-3.027 3.006-6.957 6.84-7.221 7.101z"/></svg>
+								</span><span class="menu-punkt">Blog</span></a>
+								<ul class="sub_menu">
+									<li>
+										<a href="#" class="sub_menu-main_link">Tech 
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Software & Apps</a>
+										<a href="#" class="sub_menu-link">Gadgets</a>
+										<a href="#" class="sub_menu-link">Mobile</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Entertainment
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Film</a>
+										<a href="#" class="sub_menu-link">Gaming</a>
+										<a href="#" class="sub_menu-link">Music</a>
+										<a href="#" class="sub_menu-link">Sport</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Business
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Jobs</a>
+										<a href="#" class="sub_menu-link">Marketing</a>
+										<a href="#" class="sub_menu-link">Media</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Lifestyle
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Home</a>
+										<a href="#" class="sub_menu-link">Health & Fitmess</a>
+										<a href="#" class="sub_menu-link">Travel & Leisure</a>
+									</li>
+								</ul>
+							</li>
+							<li class="left_menu-li">
+								<a href="#"><span class="menu-icon icon_left">
+									<svg xmlns="http://www.w3.org/2000/svg" width="26" height="16.061" viewBox="0 0 26 16.061"><path fill="#c5cdd1" d="M5.109 4.032C3.355 4.032 2 5.495 2 6.809v1.983c0 .867.433 2.619 1.542 3.51l-2.524 1.599s-1.019.567-1.019 1.237v.457c0 .438.549.435.987.435H5v-1.594c0-1.193.907-1.889 1.363-2.152C7.444 11.411 8 9.736 8 8.792V6.809c0-1.314-1.139-2.777-2.891-2.777zM24.981 13.933l-2.524-1.63C23.567 11.411 24 9.659 24 8.792V6.809c0-1.313-1.355-2.777-3.109-2.777C19.139 4.032 18 5.495 18 6.809v1.983c0 .944.556 2.619 1.637 3.492.456.263 1.363.959 1.363 2.152v1.594h4.013c.438 0 .987.003.987-.435v-.457c0-.669-1.019-1.205-1.019-1.205z"/><path clip-rule="evenodd" fill="#c5cdd1" d="M19.068 16.061H7.039a1.03 1.03 0 0 1-1.031-1.031v-.594c0-.87 1.068-1.364 1.068-1.364l4.122-2.322C9.755 9.592 8.932 7.314 8.932 6.187V3.61c0-1.708 1.847-3.61 4.125-3.61S16.9 1.902 16.9 3.61v2.578c0 1.238-.816 3.447-2.245 4.573l4.463 2.416s.982.406.982 1.26v.594a1.03 1.03 0 0 1-1.032 1.03z"/></svg>
+								</span><span class="menu-punkt">Community</span></a>
+								<ul class="sub_menu">
+									<li>
+										<a href="#" class="sub_menu-main_link">Lifestyle
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Home</a>
+										<a href="#" class="sub_menu-link">Health & Fitmess</a>
+										<a href="#" class="sub_menu-link">Travel & Leisure</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Tech 
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Software & Apps</a>
+										<a href="#" class="sub_menu-link">Gadgets</a>
+										<a href="#" class="sub_menu-link">Mobile</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Entertainment
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Film</a>
+										<a href="#" class="sub_menu-link">Gaming</a>
+										<a href="#" class="sub_menu-link">Music</a>
+										<a href="#" class="sub_menu-link">Sport</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Business
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Jobs</a>
+										<a href="#" class="sub_menu-link">Marketing</a>
+										<a href="#" class="sub_menu-link">Media</a>
+									</li>
+								</ul>								
+							</li>
+							<li class="left_menu-li">
+								<a href="#"><span class="menu-icon icon_left">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24.365" height="22" viewBox="0 0 24.365 22"><path fill="#c5cdd1" d="M20.135 0h-16S4.072 8.466 6.01 11.091c1.367 1.852 4.313 1.006 4.531 3.262.218 2.256 0 2.34 0 3.432s-1.602 1.561-2.912 2.362C6.318 20.947 6.464 22 6.464 22H17.806s.146-1.052-1.165-1.854c-1.311-.801-2.912-1.27-2.912-2.362s-.218-1.176 0-3.432c.218-2.256 3.164-1.41 4.531-3.262C20.197 8.466 20.135 0 20.135 0z"/><path fill="#c5cdd1" d="M19.677 10.086c-.787 0-1.835-.368-2.677-1.967l1.77-.932c.594 1.124 1.024.917 1.258.803 1.418-.693 2.593-3.727 2.308-4.361-.64-.598-2.267.433-2.662.745L18.43 2.808c1.202-.956 3.676-2.152 5.335-.565.723.691.797 1.97.207 3.599-.706 1.952-2.296 4.111-4.118 4.237a2.592 2.592 0 0 1-.177.007zM4.688 10.086c.787 0 1.835-.368 2.677-1.967l-1.77-.932c-.593 1.125-1.024.917-1.257.803C2.92 7.298 1.745 4.264 2.03 3.63c.64-.598 2.267.433 2.662.745l1.244-1.566C4.734 1.852 2.26.656.601 2.243c-.723.691-.797 1.97-.207 3.599.706 1.953 2.296 4.112 4.118 4.237.057.004.117.007.176.007z"/></svg>
+								</span><span class="menu-punkt">Contests</span></a>
+								<ul class="sub_menu">
+									<li>
+										<a href="#" class="sub_menu-main_link">Tech 
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Software & Apps</a>
+										<a href="#" class="sub_menu-link">Gadgets</a>
+										<a href="#" class="sub_menu-link">Mobile</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Entertainment
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Film</a>
+										<a href="#" class="sub_menu-link">Gaming</a>
+										<a href="#" class="sub_menu-link">Music</a>
+										<a href="#" class="sub_menu-link">Sport</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Business
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Jobs</a>
+										<a href="#" class="sub_menu-link">Marketing</a>
+										<a href="#" class="sub_menu-link">Media</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Lifestyle
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Home</a>
+										<a href="#" class="sub_menu-link">Health & Fitmess</a>
+										<a href="#" class="sub_menu-link">Travel & Leisure</a>
+									</li>
+								</ul>
+							</li>
+							<li class="left_menu-li">
+								<a href="#"><span class="menu-icon icon_left">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22.541" height="22.54" viewBox="0 0 22.541 22.54"><path fill="#c5cdd1" d="M11.124.001C4.901.051-.096 5.195.001 11.418.1 17.64 5.195 22.589 11.418 22.54c6.222-.098 11.22-5.243 11.122-11.465C22.442 4.852 17.346-.096 11.124.001zm1.274 3.724c1.127 0 1.47.686 1.47 1.421 0 .98-.784 1.862-2.058 1.862-1.078 0-1.617-.588-1.568-1.47 0-.735.637-1.813 2.156-1.813zm-2.94 14.552c-.784 0-1.372-.441-.833-2.548l.882-3.724c.196-.588.196-.833 0-.833s-1.225.441-1.813.833l-.392-.637C9.213 9.751 11.369 8.82 12.3 8.82c.784 0 .931.931.539 2.352l-1.029 3.919c-.196.687-.098.931.098.931s.98-.294 1.764-.882l.441.588c-1.863 1.863-3.871 2.549-4.655 2.549z"/></svg>
+								</span><span class="menu-punkt">About</span></a>
+								<ul class="sub_menu">
+									<li>
+										<a href="#" class="sub_menu-main_link">Tech 
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Software & Apps</a>
+										<a href="#" class="sub_menu-link">Gadgets</a>
+										<a href="#" class="sub_menu-link">Mobile</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Business
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Jobs</a>
+										<a href="#" class="sub_menu-link">Marketing</a>
+										<a href="#" class="sub_menu-link">Media</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Lifestyle
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Home</a>
+										<a href="#" class="sub_menu-link">Health & Fitmess</a>
+										<a href="#" class="sub_menu-link">Travel & Leisure</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Entertainment
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Film</a>
+										<a href="#" class="sub_menu-link">Gaming</a>
+										<a href="#" class="sub_menu-link">Music</a>
+										<a href="#" class="sub_menu-link">Sport</a>
+									</li>
+								</ul>
+							</li>
+							<li class="left_menu-li">
+								<a href="#"><span class="menu-icon icon_left">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16"><path fill-rule="evenodd" clip-rule="evenodd" fill="#c5cdd1" d="M11.987 11.036c.017 0-.453.051-.898-.283L0 3.709V14.5A1.5 1.5 0 0 0 1.5 16h21a1.5 1.5 0 0 0 1.5-1.5V3.675L12.899 10.76c.352-.267-.263.281-.912.276z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#c5cdd1" d="M24 1.5A1.5 1.5 0 0 0 22.5 0h-21A1.5 1.5 0 0 0 0 1.5l11.993 7.527L24 1.5z"/></svg>
+								</span><span class="menu-punkt">Contact</span></a>
+								<ul class="sub_menu">
+									<li>
+										<a href="#" class="sub_menu-main_link">Tech 
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Software & Apps</a>
+										<a href="#" class="sub_menu-link">Gadgets</a>
+										<a href="#" class="sub_menu-link">Mobile</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Entertainment
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Film</a>
+										<a href="#" class="sub_menu-link">Gaming</a>
+										<a href="#" class="sub_menu-link">Music</a>
+										<a href="#" class="sub_menu-link">Sport</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Business
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Jobs</a>
+										<a href="#" class="sub_menu-link">Marketing</a>
+										<a href="#" class="sub_menu-link">Media</a>
+									</li>
+									<li>
+										<a href="#" class="sub_menu-main_link">Lifestyle
+											<svg xmlns="http://www.w3.org/2000/svg" width="18.03" height="18.146" viewBox="0 0 18.03 18.146"><path fill="#56ccc8" d="M9.013.004c-4.97 0-9.01 4.07-9.01 9.07s4.04 9.07 9.01 9.07 9.02-4.07 9.02-9.07-4.05-9.07-9.02-9.07zm3.77 9.68l-.31.3c-.01 0-.02 0-.02.01l-4.05 3.87c-.34.33-.9.33-1.25 0l-.31-.3a.833.833 0 0 1 0-1.2l3.44-3.28-3.44-3.32a.833.833 0 0 1 0-1.2l.31-.3c.35-.33.91-.33 1.25 0l4.05 3.9.02.02.31.3c.18.16.26.38.26.6a.824.824 0 0 1-.26.6z"/></svg>
+										</a>
+										<a href="#" class="sub_menu-link">Home</a>
+										<a href="#" class="sub_menu-link">Health & Fitmess</a>
+										<a href="#" class="sub_menu-link">Travel & Leisure</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<div class="contacts-info">
+						<ul>
+							<li>
+								<div class="contacts-icon icon_left">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22.918" height="23.1" viewBox="0 0 22.918 23.1"><path fill="#FFF" d="M5.152 0c-.421 0-.863.127-1.244.395C3.868.423-.048 3.399 0 4.947c.095 3.069 2.376 6.876 6.775 11.315C11.175 20.7 14.95 23 18.008 23.1h.037c1.516 0 4.431-3.906 4.458-3.944.711-1.025.426-2.17-.244-2.644-.335-.236-3.971-2.675-4.412-2.947a1.611 1.611 0 0 0-.852-.225c-.383 0-.8.109-1.204.324-.307.163-2.117 1.946-2.673 2.265-.513-.381-1.52-1.196-3.003-2.692-1.484-1.497-2.292-2.513-2.668-3.029.317-.559 1.74-2.73 1.902-3.04.4-.765.434-1.546.092-2.087-.255-.408-2.655-4.079-2.92-4.45C6.227.221 5.708 0 5.152 0z"/></svg>
+								</div>
+								<span>
+									(912) 555-1234
+									<br>(912) 555-5678
+								</span>
+							</li>
+							<li>
+								<div class="contacts-icon icon_left">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18.04" height="24.082" viewBox="0 0 18.04 24.082"><path fill="#FFF" d="M9.066 0C4.119 0 0 3.976 0 8.974c0 5.234 4.581 10.744 7.851 14.506.013.015.538.602 1.187.602h.058c.648 0 1.174-.587 1.186-.602 3.272-3.762 7.758-9.272 7.758-14.506A8.953 8.953 0 0 0 9.066 0z"/><path fill="#FFF" d="M8.986 12.988c-2.227 0-4.039-1.795-4.039-4s1.812-4 4.039-4 4.039 1.795 4.039 4-1.813 4-4.039 4z"/></svg>
+								</div>
+								<span>
+									1600 Pennsylvania 
+									<br>Ave NW, Washington 
+									<br>DC 20500, USA
+								</span>
+							</li>
+							<li>
+								<div class="contacts-icon icon_left">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16"><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFF" d="M11.987 11.036c.017 0-.453.052-.898-.282L0 3.71V14.5c0 .83.671 1.5 1.5 1.5h21c.829 0 1.5-.67 1.5-1.5V3.676l-11.101 7.085c.352-.268-.263.281-.912.275z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFF" d="M24 1.5A1.5 1.5 0 0 0 22.5 0h-21A1.5 1.5 0 0 0 0 1.5l11.993 7.527L24 1.5z"/></svg>
+								</div>
+								<span>
+									hello@website.com
+									<br>office@website.com
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-right-wrap">
+				<div class="content-right">
+					<div class="elements_3">
+
+						<div class="social_net-wrap elemetns-1">
+							<div class="social_net">
+								<a href="#" class="social_net-link">
+									<span class="social_net-icon">							
+										<svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 17"><path fill-rule="evenodd" clip-rule="evenodd" fill="#fff" d="M7.424.033H5.82s-3.344-.25-3.344 3.275v2.673H.205L.211 7.88h2.264l.002 9.092h2.275V7.88H7.26l.535-1.899h-3.03V3.236s-.025-.925 1.059-.925h1.59l.01-2.278z"/></svg>				
+									</span>
+									<span class="social_net-text">Facebook</span>
+								</a>
+								<a href="#" class="social_net-link">
+									<span class="social_net-icon">			
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16.149 13.107"><path fill="#fff" d="M16.086 1.593a6.591 6.591 0 0 1-1.889.518A3.3 3.3 0 0 0 15.642.296a6.624 6.624 0 0 1-2.088.796A3.284 3.284 0 0 0 11.156.055a3.285 3.285 0 0 0-3.202 4.03A9.35 9.35 0 0 1 1.179.657a3.28 3.28 0 0 0 1.017 4.379 3.258 3.258 0 0 1-1.488-.411v.042a3.283 3.283 0 0 0 2.637 3.216 3.268 3.268 0 0 1-1.486.057 3.286 3.286 0 0 0 3.071 2.277 6.598 6.598 0 0 1-4.867 1.359 9.31 9.31 0 0 0 5.039 1.475c6.046 0 9.353-5 9.353-9.334 0-.142-.004-.284-.01-.425a6.677 6.677 0 0 0 1.641-1.699z"/></svg>
+									</span>
+									<span class="social_net-text">Twitter</span>
+								</a>
+								<a href="#" class="social_net-link">
+									<span class="social_net-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 16.172 16.161"><path fill="#fff" d="M8.379 9.229c-.44-.331-1.398-1.005-1.398-1.458 0-.531.152-.792.955-1.417.82-.639 1.402-1.482 1.402-2.528 0-1.142-.468-2.174-1.348-2.676h1.246L10.299.065h-4.75c-2.409 0-4.418 1.746-4.418 3.694 0 1.99 1.32 3.577 3.586 3.577.158 0 .311-.01.46-.019a1.997 1.997 0 0 0-.251.923c0 .553.305.868.682 1.233-.285 0-.561.008-.861.008-2.76 0-4.675.873-4.675 3.574 0 1.789 2.313 3.041 5.072 3.041 3.146 0 5.108-1.662 5.081-3.566-.023-1.434-.312-2.155-1.846-3.301zm-5.323-5.37c-.211-1.582.854-2.684 2.069-2.649 1.214.037 2.005 1.227 2.214 2.809.209 1.583-.489 2.557-1.703 2.522-1.216-.037-2.37-1.098-2.58-2.682zM5.09 14.924c-1.792 0-3.087-1.029-3.087-2.291 0-1.238 1.452-1.895 3.208-1.895.653 0 2.612 0 3.22 1.514.054.139.058.293.058.445 0 1.264-.879 2.227-3.399 2.227zM16.1 3.11h-2.004v1.984h-1.039V3.11h-1.971V2.108h1.971V.066h1.039v2.042H16.1V3.11z"/></svg>		
+									</span>
+									<span class="social_net-text">Google +</span>
+								</a>
+								<a href="#" class="social_net-link">
+									<span class="social_net-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16.032" height="16.051" viewBox="0 0 16.032 16.051"><path fill="#fff" d="M2.136 16.033A2.133 2.133 0 0 1 0 13.902c0-1.177.956-2.13 2.136-2.13 1.181 0 2.138.952 2.138 2.13a2.134 2.134 0 0 1-2.138 2.131z"/><path fill="#fff" d="M7.499 16.047c0-2.01-.781-3.899-2.198-5.318A7.434 7.434 0 0 0 .002 8.531V5.455c5.834 0 10.581 4.752 10.581 10.592H7.499z"/><path fill="#fff" d="M12.947 16.051c0-7.153-5.804-12.975-12.94-12.975V0c8.836 0 16.025 7.201 16.025 16.051h-3.085z"/></svg>
+									</span>
+									<span class="social_net-text">Rss Feeds</span>
+								</a>
+								<a href="#" class="social_net-link">
+									<span class="social_net-icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="12.975" height="16.451" viewBox="0 0 12.975 16.451"><path fill="#fff" d="M7.781 11.889c-1.04 0-2.018-.55-2.352-1.177 0 0-.56 2.177-.677 2.597-.417 1.486-1.644 2.973-1.738 3.093-.067.084-.214.058-.229-.054-.026-.188-.339-2.062.029-3.591l1.239-5.149s-.309-.604-.309-1.495c0-1.401.828-2.446 1.857-2.446.875 0 1.297.645 1.297 1.417 0 .864-.56 2.157-.849 3.354-.242 1.002.511 1.82 1.519 1.82 1.824 0 3.053-2.3 3.053-5.025 0-2.071-1.421-3.621-4.006-3.621-2.919 0-4.739 2.139-4.739 4.526 0 .824.248 1.404.635 1.852.178.207.203.291.138.528-.046.174-.151.593-.196.758-.063.241-.262.326-.482.237C.626 8.975 0 7.529 0 5.902 0 3.219 2.306 0 6.88 0c3.675 0 6.095 2.61 6.095 5.414 0 3.705-2.1 6.475-5.194 6.475z"/></svg>
+									</span>
+									<span class="social_net-text">Pinterest</span>
+								</a>
+							</div>
+						</div>
+
+						<div class="elemetns_2">
+							<div class="social_min_blok min_blok-facebook">
+								<div class="social-left">								
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="42" viewBox="0 0 8 17"><path fill-rule="evenodd" clip-rule="evenodd" fill="#fff" d="M7.424.033H5.82s-3.344-.25-3.344 3.275v2.673H.205L.211 7.88h2.264l.002 9.092h2.275V7.88H7.26l.535-1.899h-3.03V3.236s-.025-.925 1.059-.925h1.59l.01-2.278z"/></svg>
+									<div class="number_follow">156k</div>
+								</div>
+								<div class="social-right">
+									<div class="social-follow">Follow</div>
+								</div>
+							</div>
+							<div class="social_min_blok min_blok-twiter">
+								<div class="social-left">				
+									<svg xmlns="http://www.w3.org/2000/svg" width="43" height="34" viewBox="0 0 16.149 13.107"><path fill="#fff" d="M16.086 1.593a6.591 6.591 0 0 1-1.889.518A3.3 3.3 0 0 0 15.642.296a6.624 6.624 0 0 1-2.088.796A3.284 3.284 0 0 0 11.156.055a3.285 3.285 0 0 0-3.202 4.03A9.35 9.35 0 0 1 1.179.657a3.28 3.28 0 0 0 1.017 4.379 3.258 3.258 0 0 1-1.488-.411v.042a3.283 3.283 0 0 0 2.637 3.216 3.268 3.268 0 0 1-1.486.057 3.286 3.286 0 0 0 3.071 2.277 6.598 6.598 0 0 1-4.867 1.359 9.31 9.31 0 0 0 5.039 1.475c6.046 0 9.353-5 9.353-9.334 0-.142-.004-.284-.01-.425a6.677 6.677 0 0 0 1.641-1.699z"/></svg>
+									<div class="number_follow">89k</div>
+								</div>
+								<div class="social-right">
+									<div class="social-follow social-follow-plus">Following</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="elements_full">
+						<div class="sign_in-wrap">
+							<h1 class="elements_full-head">Sign In</h1>
+							<p class="elements_full-p">Just select your favorite social network to get started</p>
+							<div class="social_door">
+								<a href="#">									
+									<svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 17"><path fill-rule="evenodd" clip-rule="evenodd" fill="#fff" d="M7.424.033H5.82s-3.344-.25-3.344 3.275v2.673H.205L.211 7.88h2.264l.002 9.092h2.275V7.88H7.26l.535-1.899h-3.03V3.236s-.025-.925 1.059-.925h1.59l.01-2.278z"/></svg>
+								</a>
+								<a href="#">		
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16.149 13.107"><path fill="#fff" d="M16.086 1.593a6.591 6.591 0 0 1-1.889.518A3.3 3.3 0 0 0 15.642.296a6.624 6.624 0 0 1-2.088.796A3.284 3.284 0 0 0 11.156.055a3.285 3.285 0 0 0-3.202 4.03A9.35 9.35 0 0 1 1.179.657a3.28 3.28 0 0 0 1.017 4.379 3.258 3.258 0 0 1-1.488-.411v.042a3.283 3.283 0 0 0 2.637 3.216 3.268 3.268 0 0 1-1.486.057 3.286 3.286 0 0 0 3.071 2.277 6.598 6.598 0 0 1-4.867 1.359 9.31 9.31 0 0 0 5.039 1.475c6.046 0 9.353-5 9.353-9.334 0-.142-.004-.284-.01-.425a6.677 6.677 0 0 0 1.641-1.699z"/></svg>
+								</a>
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 16.172 16.161"><path fill="#fff" d="M8.379 9.229c-.44-.331-1.398-1.005-1.398-1.458 0-.531.152-.792.955-1.417.82-.639 1.402-1.482 1.402-2.528 0-1.142-.468-2.174-1.348-2.676h1.246L10.299.065h-4.75c-2.409 0-4.418 1.746-4.418 3.694 0 1.99 1.32 3.577 3.586 3.577.158 0 .311-.01.46-.019a1.997 1.997 0 0 0-.251.923c0 .553.305.868.682 1.233-.285 0-.561.008-.861.008-2.76 0-4.675.873-4.675 3.574 0 1.789 2.313 3.041 5.072 3.041 3.146 0 5.108-1.662 5.081-3.566-.023-1.434-.312-2.155-1.846-3.301zm-5.323-5.37c-.211-1.582.854-2.684 2.069-2.649 1.214.037 2.005 1.227 2.214 2.809.209 1.583-.489 2.557-1.703 2.522-1.216-.037-2.37-1.098-2.58-2.682zM5.09 14.924c-1.792 0-3.087-1.029-3.087-2.291 0-1.238 1.452-1.895 3.208-1.895.653 0 2.612 0 3.22 1.514.054.139.058.293.058.445 0 1.264-.879 2.227-3.399 2.227zM16.1 3.11h-2.004v1.984h-1.039V3.11h-1.971V2.108h1.971V.066h1.039v2.042H16.1V3.11z"/></svg>	 				
+								</a>
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="15.308" height="15.696" viewBox="0 0 15.308 15.696"><path fill="#fff" d="M3.751 1.693c0 .968-.695 1.679-1.884 1.679C.75 3.372 0 2.661 0 1.693 0 .702.746 0 1.887 0s1.841.702 1.864 1.693zM.368 15.696V4.872h2.991v10.825H.368zM5.228 4.872h2.668l.221 1.172c.441-.706 1.651-1.551 3.46-1.551 2.206 0 3.731 1.286 3.731 4.46v6.744h-2.979V9.431c0-1.388-.859-2.336-2.072-2.336-.926 0-1.688.639-1.93 1.256-.088.22-.11.529-.11.837v6.507H5.228V4.872z"/></svg>
+								</a>
+
+							</div>
+						</div>
+					</div>
+					<div class="elements_full">
+						<div class="dispatch-wrap">
+							<h2 class="elements_full-head">Join the Newsletter</h2>
+							<p class="dispatch-p">Sign up for our personalized daily newsletter</p>
+							<form action="#" class="dispatch-form">
+								<input type="text" name="mail" class="dispatch-input" placeholder="Enter email address">
+								<input type="submit" class="dispatch-btn btn" value="SIGN UP">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<section class="section_slider">
+			<div class="sliderframe_wrap">
+				<div class="sliderframe" id="sliderframe">
+					<ul class="">
+						<li>
+							<div class="slide">
+								<img src="img/Koala.jpg" alt="Koala">
+								<h2>Featured Story</h2>
+								<p>Now that the holiday gift-giving time is over, we're 
+									sure many of our readers unwrapped some new consoles. 
+									Despite its long life on the market...
+								</p>
+								<a href="#" class="btn-view">VIEW MORE</a>
+							</div>
+						</li>
+						<li>
+							<div class="slide">
+								<img src="img/Desert.jpg" alt="Desert">
+								<h2>Featured Story</h2>
+								<p>Now that the holiday gift-giving time is over, we're 
+									sure many of our readers unwrapped some new consoles. 
+									Despite its long life on the market...
+								</p>
+								<a href="#" class="btn-view">VIEW MORE</a>
+							</div>
+						</li>
+						<li>
+							<div class="slide">
+								<img src="img/Lighthouse.jpg" alt="Lighthouse">
+								<h2>Featured Story</h2>
+								<p>Now that the holiday gift-giving time is over, we're 
+									sure many of our readers unwrapped some new consoles. 
+									Despite its long life on the market...
+								</p>
+								<a href="#" class="btn-view">VIEW MORE</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="pages">
+				<li class="">1</li>
+				<li class="">2</li>
+				<li class="active">3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+			</ul>
+			<div class="controls">
+				<div class="prev">
+					<svg xmlns="http://www.w3.org/2000/svg" width="8.895" height="13.896" viewBox="0 0 8.895 13.896"><path fill-rule="evenodd" clip-rule="evenodd" fill="#585858" d="M3.806 6.97L8.538 2.4a1.13 1.13 0 0 0 0-1.648L8.107.341a1.257 1.257 0 0 0-1.722 0L.815 5.712c-.01.008-.02.01-.029.019l-.43.411A1.13 1.13 0 0 0 0 6.97c-.001.299.116.6.356.828l.43.412c.008.008.02.01.029.018l5.57 5.327a1.257 1.257 0 0 0 1.722 0l.431-.41a1.13 1.13 0 0 0 0-1.649L3.806 6.97z"/></svg>
+				</div>
+				<div class="next">					
+					<svg xmlns="http://www.w3.org/2000/svg" width="8.895" height="13.896" viewBox="0 0 8.895 13.896"><path fill-rule="evenodd" clip-rule="evenodd" fill="#585858" d="M3.806 6.97L8.538 2.4a1.13 1.13 0 0 0 0-1.648L8.107.341a1.257 1.257 0 0 0-1.722 0L.815 5.712c-.01.008-.02.01-.029.019l-.43.411A1.13 1.13 0 0 0 0 6.97c-.001.299.116.6.356.828l.43.412c.008.008.02.01.029.018l5.57 5.327a1.257 1.257 0 0 0 1.722 0l.431-.41a1.13 1.13 0 0 0 0-1.649L3.806 6.97z"/></svg>
+				</div>
+			</div>
+		</section>
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="ask_question-dark">
+	</div>
+	<form action="#" class="ask_question">
+		<h2>Ask a Question</h2>
+		<input type="text" name="name" placeholder="Your name">
+		<input type="text" name="mail" placeholder="hello@graphicburger.com">
+		<textarea name="message" placeholder="Your qustion..."></textarea>
+		<input type="submit" value="SUBMIT" class="btn">
+	</form>
+
+
+</main>
+<footer>
+
+</footer>
+
+
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
